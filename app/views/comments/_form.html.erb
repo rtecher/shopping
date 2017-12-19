@@ -1,0 +1,5 @@
+<%= form_with model: [@product, @product.comments.build] do |form| %>
+  <%= form.label "Yorum Yap" %>
+  <%= form.text_field :content %>
+  <%= form.submit "Gönder", class: "button" %>
+<% end %>

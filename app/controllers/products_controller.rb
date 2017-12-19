@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @comments = Comment.where(product_id: @product)
   end
 
   # GET /products/new

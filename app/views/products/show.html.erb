@@ -14,5 +14,23 @@
   <%= @product.description %>
 </p>
 
+<div id="comments">
+  <h2 class="comment_count">
+    <%= @product.comments.count %>
+    yorum
+  </h2>
+  <% @comments.each do |comment| %>
+    <div class="comment">
+      <p class="username">
+        <%= comment.user.name %>
+      </p>
+      <p class="content">
+        <%= comment.content %>
+      </p>
+    </div>
+  <% end %>
+  <%= render "comments/form" %>
+</div>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
