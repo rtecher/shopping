@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Shopping</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<head>
+  <title>Muse</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet"></link>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></link>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <div class="wrapper clearfix">
+      <div id="logo">
+        <%= link_to "Shopping", root_path %>
+      </div>
+      <nav>
+        <% if user_signed_in? %>
+          <%= link_to current_user.name, edit_user_registration_path %>
+          <%= link_to "Yeni Ürün", new_product_path, class: "button" %>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path %>
+          <%= link_to "Sign Up", new_user_registration_path, class: "button" %>
+        <% end %>
+      </nav>
+    </div>
+  </header>
+  <p class="notice">
+    <%= notice %>
+  </p>
+  <p class="alert">
+    <%= alert %>
+  </p>
+  <div class="wrapper">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>

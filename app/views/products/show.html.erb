@@ -1,23 +1,37 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <%= image_tag @product.image.url(:medium) %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
+<div id="product_show">
+  <h1>
+    <%= @product.title %>
+  </h1>
+  <p class="username">
+    <%= @product.user.name %>
+    tarafından
+    <%= @product.created_at %>
+    tarihinde paylaşıldı.
+  </p>
+  <div class="clearfix">
+    <div class="product_image_description">
+      <%= image_tag @product.image.url(:medium) %>
+      <div class="description">
+        <%= simple_format(@product.description) %>
+      </div>
+    </div>
+    <div class="product_data">
+      <p class="data">
+        <i class="fa fa-comments-o"></i>
+        Yorumlar
+        <%= @product.comments.count%>
+      </p>
+      <% if @product.user == current_user %>
+        <%= link_to "Edit", edit_product_path(@product), class: "data" %>
+        <%= link_to "Delete", product_path(@product), method: :delete, data: { confirm: "Are you sure?" }, class: "data" %>
+      <% end %>
+    </div>
+  </div>
+</div>
 <div id="comments">
   <h2 class="comment_count">
     <%= @product.comments.count %>
-    yorum
+    adet yorum yapılmıştır.
   </h2>
   <% @comments.each do |comment| %>
     <div class="comment">
@@ -31,6 +45,3 @@
   <% end %>
   <%= render "comments/form" %>
 </div>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
