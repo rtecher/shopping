@@ -27,33 +27,35 @@
         <%= link_to "Sil", product_path(@product), method: :delete, data: { confirm: "Emin Misin?" }, class: "data" %>
       <% end %>
     </div>
-    <div id="random_product">
-      <h3>İlginizi Çekebilecek Diğer Ürünler</h3>
-      <div class="product">
-        <div class="product_image">
-          <%= link_to (image_tag @random_product.image.url(:medium)), product_path(@random_product) %>
-        </div>
-        <div class="product_content">
-          <div class="title">
-            <h2>
-              <%= link_to @random_product.title, product_path(@random_product) %>
-            </h2>
+    <% if @random_product %>
+      <div id="random_product">
+        <h3>İlginizi Çekebilecek Diğer Ürünler</h3>
+        <div class="product">
+          <div class="product_image">
+            <%= link_to (image_tag @random_product.image.url(:medium)), product_path(@random_product) %>
           </div>
-          <div class="data clearfix">
-            <p class="username">
-              <%= @random_product.user.name %>
-              tarafından paylaşıldı.
-            </p>
-            <p class="buttons">
-              <span>
-                <i class="fa fa-comments-o"></i>
-                <%= @random_product.comments.count %>
-              </span>
-            </p>
+          <div class="product_content">
+            <div class="title">
+              <h2>
+                <%= link_to @random_product.title, product_path(@random_product) %>
+              </h2>
+            </div>
+            <div class="data clearfix">
+              <p class="username">
+                <%= @random_product.user.name %>
+                tarafından paylaşıldı.
+              </p>
+              <p class="buttons">
+                <span>
+                  <i class="fa fa-comments-o"></i>
+                  <%= @random_product.comments.count %>
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
 <div id="comments">
