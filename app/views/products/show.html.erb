@@ -16,22 +16,50 @@
       </div>
     </div>
     <div class="product_data">
+      <%= link_to "Satın AL", @product, class: "button" %>
       <p class="data">
         <i class="fa fa-comments-o"></i>
-        Yorumlar
-        <%= @product.comments.count%>
+        <%= @product.comments.count %>
+        yorum
       </p>
       <% if @product.user == current_user %>
-        <%= link_to "Edit", edit_product_path(@product), class: "data" %>
-        <%= link_to "Delete", product_path(@product), method: :delete, data: { confirm: "Are you sure?" }, class: "data" %>
+        <%= link_to "Düzenle", edit_product_path(@product), class: "data" %>
+        <%= link_to "Sil", product_path(@product), method: :delete, data: { confirm: "Emin Misin?" }, class: "data" %>
       <% end %>
+    </div>
+    <div id="random_product">
+      <h3>İlginizi Çekebilecek Diğer Ürünler</h3>
+      <div class="product">
+        <div class="product_image">
+          <%= link_to (image_tag @random_product.image.url(:medium)), product_path(@random_product) %>
+        </div>
+        <div class="product_content">
+          <div class="title">
+            <h2>
+              <%= link_to @random_product.title, product_path(@random_product) %>
+            </h2>
+          </div>
+          <div class="data clearfix">
+            <p class="username">
+              <%= @random_product.user.name %>
+              tarafından paylaşıldı.
+            </p>
+            <p class="buttons">
+              <span>
+                <i class="fa fa-comments-o"></i>
+                <%= @random_product.comments.count %>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <div id="comments">
   <h2 class="comment_count">
     <%= @product.comments.count %>
-    adet yorum yapılmıştır.
+    yorum
   </h2>
   <% @comments.each do |comment| %>
     <div class="comment">

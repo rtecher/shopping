@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Muse</title>
+  <title>Shopping</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet"></link>
@@ -17,10 +17,11 @@
       <nav>
         <% if user_signed_in? %>
           <%= link_to current_user.name, edit_user_registration_path %>
-          <%= link_to "Yeni Ürün", new_product_path, class: "button" %>
+          <%= link_to "Yeni Ürün", new_product_path %>
+          <%= link_to "Çıkış Yap", destroy_user_session_path, method: :delete,class:"button" %>
         <% else %>
-          <%= link_to "Sign in", new_user_session_path %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "button" %>
+          <%= link_to "Oturum Aç", new_user_session_path %>
+          <%= link_to "Üye Ol", new_user_registration_path, class: "button" %>
         <% end %>
       </nav>
     </div>
