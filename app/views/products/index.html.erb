@@ -16,32 +16,70 @@
     </span>
   </p>
 <% end %>
-<div id="products">
-  <% @products.each do |product| %>
-    <div class="product">
-      <div class="product_image">
-        <%= link_to (image_tag product.image.url(:small)), product %>
-      </div>
-      <div class="product_content">
-        <div class="title">
-          <h2>
-            <%= link_to product.title, product %>
-          </h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Shop Name</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Category 1</a>
+                <a href="#" class="list-group-item">Category 2</a>
+                <a href="#" class="list-group-item">Category 3</a>
+            </div>
         </div>
-        <div class="data clearfix">
-          <p class="username">
-            <%= product.user.name %>
-            taradından paylaşıldı.
-          </p>
-          <p class="buttons">
-            <span>
-              <i class="fa fa-comments-o"></i>
-              <%= product.comments.count %>
-              yorum.
-            </span>
-          </p>
+        <div class="col-md-9">
+            <div class="row carousel-holder">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <script type="text/javascript">
+                        $(function(){
+                          $(".item:first").addClass("active");
+                        });
+                        </script>
+                        <div class="carousel-inner">
+                          <% @products.first(3).each do |product| %>
+                          <div class="item">
+                            <%= link_to (image_tag product.image.url(:slider), class:"slide-image", alt: product.title), product %>
+                          </div>
+                          <% end %>
+                        </div>
+                      </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  <% end %>
+    <div class="row">
+    <% @products.each do |product| %>
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+              <%= link_to (image_tag product.image.url(:small)), product %>
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><%= link_to product.title, product %></h4>
+                    <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                </div>
+                <div class="ratings">
+                    <p class="pull-right">15 reviews</p>
+                    <p>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <% end %>
 </div>

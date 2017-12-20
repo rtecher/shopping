@@ -9,23 +9,42 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <div class="wrapper clearfix">
-      <div id="logo">
-        <%= link_to "Shopping", root_path %>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <a><%= link_to "Shopping", root_path, class: "navbar-brand" %></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <% if user_signed_in? %>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <%= link_to current_user.name, edit_user_registration_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Yeni Ürün", new_product_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Çıkış Yap", destroy_user_session_path, method: :delete %>
+                    </li>
+                </ul>
+            </div>
+          <% else %>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <%= link_to "Üye Ol", new_user_registration_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Oturum Aç", new_user_session_path %>
+                    </li>
+                </ul>
+            </div>
+          <% end %>
       </div>
-      <nav>
-        <% if user_signed_in? %>
-          <%= link_to current_user.name, edit_user_registration_path %>
-          <%= link_to "Yeni Ürün", new_product_path %>
-          <%= link_to "Çıkış Yap", destroy_user_session_path, method: :delete,class:"button" %>
-        <% else %>
-          <%= link_to "Oturum Aç", new_user_session_path %>
-          <%= link_to "Üye Ol", new_user_registration_path, class: "button" %>
-        <% end %>
-      </nav>
-    </div>
-  </header>
+  </nav>
   <p class="notice">
     <%= notice %>
   </p>
@@ -35,5 +54,18 @@
   <div class="wrapper">
     <%= yield %>
   </div>
+  <div class="container">
+      <hr>
+      <!-- Footer -->
+      <footer>
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>Copyright &copy; Your Website 2014</p>
+              </div>
+          </div>
+      </footer>
+
+  </div>
+  <!-- /.container -->
 </body>
 </html>

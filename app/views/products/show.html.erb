@@ -1,77 +1,89 @@
-<div id="product_show">
-  <h1>
-    <%= @product.title %>
-  </h1>
-  <p class="username">
-    <%= @product.user.name %>
-    tarafından
-    <%= @product.created_at %>
-    tarihinde paylaşıldı.
-  </p>
-  <div class="clearfix">
-    <div class="product_image_description">
-      <%= image_tag @product.image.url(:medium) %>
-      <div class="description">
-        <%= simple_format(@product.description) %>
-      </div>
-    </div>
-    <div class="product_data">
-      <%= link_to "Satın AL", @product, class: "button" %>
-      <p class="data">
-        <i class="fa fa-comments-o"></i>
-        <%= @product.comments.count %>
-        yorum
-      </p>
-      <% if @product.user == current_user %>
-        <%= link_to "Düzenle", edit_product_path(@product), class: "data" %>
-        <%= link_to "Sil", product_path(@product), method: :delete, data: { confirm: "Emin Misin?" }, class: "data" %>
-      <% end %>
-    </div>
-    <% if @random_product %>
-      <div id="random_product">
-        <h3>İlginizi Çekebilecek Diğer Ürünler</h3>
-        <div class="product">
-          <div class="product_image">
-            <%= link_to (image_tag @random_product.image.url(:medium)), product_path(@random_product) %>
-          </div>
-          <div class="product_content">
-            <div class="title">
-              <h2>
-                <%= link_to @random_product.title, product_path(@random_product) %>
-              </h2>
-            </div>
-            <div class="data clearfix">
-              <p class="username">
-                <%= @random_product.user.name %>
-                tarafından paylaşıldı.
-              </p>
-              <p class="buttons">
-                <span>
-                  <i class="fa fa-comments-o"></i>
-                  <%= @random_product.comments.count %>
-                </span>
-              </p>
-            </div>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-8">
+      <div class="thumbnail">
+        <%= image_tag @product.image.url(:slider) %>
+        <p class="username">
+        </p>
+
+        <div class="caption-full">
+          <h4 class="pull-right">$24.99</h4>
+          <%= @product.user.name %>
+          tarafından paylaşıldı.
+
+          <h4><%= @product.title %></h4>
+          <p><%= simple_format(@product.description) %></p>
+
+        </div>
+          <div class="ratings">
+            <p class="pull-right"><%= @product.comments.count %> yorum </p>
+            <p>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star-empty"></span>
+              4.0 stars
+            </p>
           </div>
         </div>
+
+        <div class="well">
+          <%= render "comments/form" %>
+
+          <hr>
+
+          <% @comments.each do |comment| %>
+          <div class="row">
+            <div class="col-md-12">
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star-empty"></span>
+              <%= comment.user.username %>
+              <span class="pull-right"><%= comment.created_at %></span>
+              <p><%= comment.content %></p>
+            </div>
+          </div>
+          <% end %>
+
+          <hr>
+        </div>
+
       </div>
-    <% end %>
-  </div>
-</div>
-<div id="comments">
-  <h2 class="comment_count">
-    <%= @product.comments.count %>
-    yorum
-  </h2>
-  <% @comments.each do |comment| %>
-    <div class="comment">
-      <p class="username">
-        <%= comment.user.name %>
-      </p>
-      <p class="content">
-        <%= comment.content %>
-      </p>
+      <div class="col-md-3">
+        <p class="lead">İlginizi Çekebilecek Ürünler</p>
+          <% if @random_product %>
+          <div id="random_product">
+            <div class="product">
+              <div class="product_image">
+                <%= link_to (image_tag @random_product.image.url(:small)), product_path(@random_product) %>
+              </div>
+              <div class="product_content">
+                <div class="title">
+                  <h2>
+                    <%= link_to @random_product.title, product_path(@random_product) %>
+                  </h2>
+                </div>
+                <div class="data clearfix">
+                  <p class="username">
+                    <%= @random_product.user.name %>
+                    tarafından paylaşıldı.
+                  </p>
+                  <p class="buttons">
+                    <span>
+                      <i class="fa fa-comments-o"></i>
+                      <%= @random_product.comments.count %>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% end %>
+      </div>
     </div>
-  <% end %>
-  <%= render "comments/form" %>
-</div>
+  </div>
