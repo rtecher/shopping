@@ -6,10 +6,15 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     @comment.product_id = @product.id
 
-    if @comment.save
-      redirect_to product_path(@product)
-    else
-      render 'new'
+    respond_to do |format|
+      if @comment.save
+        Notification.create(recipient: @product.user, actor: current_user, action: "commented", notifiable_id: @product.id)
+        format.html { redirect_to @product, notice: 'Comment was successfully created.' }
+        format.json { render :show, status: :created, location: @product }
+      else
+        format.html { render :new }
+        format.json { render json: @product.errors, status: :unprocessable_entity }
+      end
     end
   end
 end
