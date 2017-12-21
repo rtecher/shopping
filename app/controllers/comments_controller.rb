@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
     @comment.product_id = @product.id
 
     if @comment.save
+      Notification.create(recipient: @product.user, actor: current_user, action: "commented", notifiable_id: @product.id)
       redirect_to product_path(@product)
     else
       render 'new'

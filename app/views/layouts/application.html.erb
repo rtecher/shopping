@@ -17,9 +17,48 @@
               <a><%= link_to "Shopping", root_path, class: "navbar-brand" %></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
+
+
           <% if user_signed_in? %>
+            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdown-notifications" style=<%= "display:none" if !current_user %> id="dd-example" >
+                      <a class="glyphicon glyphicon-bell notification-icon dropdown-toggle" data-count="2"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="badge badge-notify" style="background-color:red;" id="myspan" ><%= @notifications.count %></span>
+                      </a>
+
+
+                      <script>
+                        $(document).ready(function(){
+                            $('#myDropdown').on('hide.bs.dropdown', function () {
+                              
+                              $.get('<%= :mark_as_read %>', function(response){
+                                alert("bildirimler kapatıldı");
+                                document.getElementById("myspan").textContent="0";
+                              });
+                            });
+                        });          
+                      </script>
+
+
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
+                        <% @notifications.each do |notification| %>
+                          <% mark_as_read %>
+                          <tr>
+                            <li> <%= link_to "#{notification.actor.email } #{Product.find(notification.notifiable_id).title}'ne #{notification.action} yaptı ", Product.find(notification.notifiable_id), style:"background-color: orange" %></li>
+                          </tr>
+                        <% end %>
+                        <% @unrnotifications.each do |unrnotification| %>
+                          <tr>
+                            <li> <%= link_to "#{unrnotification.actor.email } #{Product.find(unrnotification.notifiable_id).title}'ne #{unrnotification.action} yaptı ", Product.find(unrnotification.notifiable_id) %></li>
+                          </tr>
+                        <% end %>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tüm Bildirimler</a></li>
+                      </ul>
+                    </li><!-- /dropdown -->
+
                     <li>
                       <%= link_to current_user.name, edit_user_registration_path %>
                     </li>
@@ -34,6 +73,7 @@
           <% else %>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+
                     <li>
                       <%= link_to "Üye Ol", new_user_registration_path %>
                     </li>
