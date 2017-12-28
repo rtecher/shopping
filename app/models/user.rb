@@ -5,5 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :products
   has_many :comments
-  has_many :conversations
 end
