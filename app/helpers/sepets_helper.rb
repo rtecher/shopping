@@ -1,0 +1,2 @@
+module SepetsHelper
+end

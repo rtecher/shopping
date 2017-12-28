@@ -17,6 +17,16 @@
           <p><%= simple_format(@product.description) %></p>
 
         </div>
+
+
+          <div>
+            <% if current_user.sepets.where(product: @product).count > 0 %>
+              <%= link_to 'Sepeteten Çıkar', product_sepet_path(@product), method: :delete,  class: "star glyphicon glyphicon-star-empty btn btn-success" %>
+            <% else %>
+              <%= link_to 'Sepete Ekle', product_sepets_path(@product), method: :post,  class: "star glyphicon glyphicon-star-empty btn btn-success" %>
+            <% end %>
+          </div>
+
           <div class="ratings">
             <p class="pull-right"><%= @product.comments.count %> yorum </p>
             <p>
