@@ -18,7 +18,6 @@ class ApplicationController < ActionController::Base
   def set_notifications
     @notifications = Notification.where(recipient: current_user).unread
     @unrnotifications = Notification.where(recipient: current_user).where.not(read_at:nil).limit(10)
-    @conversations = Conversation.where("sender_id = ? OR reciever_id = ?", current_user.id, current_user.id)
   end
 
 end
