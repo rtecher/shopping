@@ -18,7 +18,12 @@ gem 'paperclip', '~> 5.1'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'modernizr-rails'
+gem 'flex-slider-rails'
+gem 'countdown'
 gem 'activeadmin'
+gem 'simplecart-rails'
+gem "animate-rails"
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
