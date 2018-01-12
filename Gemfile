@@ -23,7 +23,7 @@ gem 'countdown'
 gem 'activeadmin'
 gem 'simplecart-rails'
 gem "animate-rails"
-gem 'rails_12factor'
+gem 'sqlite3'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
@@ -31,15 +31,18 @@ group :development, :test do
 end
 group :development do
   gem 'web-console', '>= 3.3.0'
-  gem 'sqlite3'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :production do
-  gem 'pg'
+group :development do
+	gem 'sqlite3'
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
