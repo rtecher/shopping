@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
-  before_action :set_notifications
+  #before_action :set_notifications
   
   protected
 
@@ -15,9 +15,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: [:name,:surname,:address,:username,:phone])
   end
 
-  def set_notifications
-    @notifications = Notification.where(recipient: current_user).unread
-    @unrnotifications = Notification.where(recipient: current_user).where.not(read_at:nil).limit(10)
-  end
+  # def set_notifications
+  #   @notifications = Notification.where(recipient: current_user).unread
+  #   @unrnotifications = Notification.where(recipient: current_user).where.not(read_at:nil).limit(10)
+  # end
 
 end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'detailed_products/index'
+
   get 'sepets/index'
 
   get 'sepets/create'

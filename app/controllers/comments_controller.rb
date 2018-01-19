@@ -8,7 +8,6 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        Notification.create(recipient: @product.user, actor: current_user, action: "commented", notifiable_id: @product.id)
         format.html { redirect_to @product, notice: 'Comment was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else

@@ -1,0 +1,2 @@
+module DetailedProductsHelper
+end

@@ -1,5 +1,36 @@
 <h2>Sign up</h2>
 
+<div class="login-page">
+  <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
+    <h3 class="title">Register<span> Form</span></h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
+  </div>
+  <div class="widget-shadow">
+    <div class="login-top wow fadeInUp animated" data-wow-delay=".7s">
+      <h4>Already have an Account ?<a href="signin.html">  Sign In »</a> </h4>
+    </div>
+    <div class="login-body">
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), class:"wow fadeInUp animated") do |f| %>
+  <%= f.error_notification %>
+        <%= f.input :name, required: true, autofocus: true %>
+        <%= f.input :surname, required: true, autofocus: true %>
+        <%= f.input :username, required: true, autofocus: true %>
+        <%= f.input :address, required: true, autofocus: true %>
+        <%= f.input :phone, required: true, autofocus: true %>
+        <%= f.input :email, required: true %>
+        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+        <%= f.input :password_confirmation, required: true %>
+        
+        <div class="form-actions">
+            <%= f.button :submit, "Sign up" %>
+          </div>
+        <% end %>
+        <input type="submit" name="Register" value="Register">
+      </form>
+    </div>
+  </div>
+</div>
+
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 

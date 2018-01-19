@@ -1,0 +1,70 @@
+<!--products-->
+<div class="products">	 
+	<div class="container">
+		<div class="col-md-9 product-model-sec">
+			<% @products.all.each do |product| %>
+			<div class="product-grids simpleCart_shelfItem wow fadeInUp animated" data-wow-delay=".5s">
+				<div class="new-top">
+					<a href="single.html"><%= image_tag product.image.url(:small), class: "img-responsive"%></a>
+					<div class="new-text">
+						<ul>
+							<li><%= link_to 'Hızlı Bakış', product %></li>
+							<li><input type="number" class="item_quantity" min="1" value="1"></li>
+							<li><a class="item_add" href=""> Sepete Ekle</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="new-bottom">
+					<h5><a class="name" href="single.html"><%= product.title %> </a></h5>
+					<div class="rating">
+						<span class="on">☆</span>
+						<span class="on">☆</span>
+						<span class="on">☆</span>
+						<span class="on">☆</span>
+						<span>☆</span>
+					</div>
+					<div class="ofr">
+						<% if product.discount %>
+						<p class="pric1"><del><%= product.price %> TL</del></p>
+						<p><span class="item_price"><%= product.discount %> TL</span></p>
+						<% else %>
+						<p><span class="item_price"><%= product.price %> TL</span></p>
+						<% end %>
+					</div>
+				</div>
+			</div>
+			<% end %>
+		</div>
+		<div class="col-md-3 rsidebar">
+			<div class="rsidebar-top">
+				<%= form_tag(detailed_products_index_path, method: "get") do %>
+				<div class="slider-left">
+					<h4>Fiyata Göre Listele</h4>         
+					<tr><%= text_field_tag :minprice, nil, placeholder: 'en düşük' %> TL</tr>
+					<tr><%= text_field_tag(:maxprice, nil, placeholder: 'en yüksek') %> TL</tr>
+					<div class="sidebar-row">
+						<div class="sidebar-row">
+							<h4>DISCOUNTS</h4>
+							<div class="row row1 scroll-pane">
+								<label class="checkbox"><%= check_box_tag :discounted, "check", false, class: "checkbox" %><i></i><%= label_tag(:discounted, "İndirimli Ürünler") %></label>
+							</div>
+						</div>
+						<br>
+						<br>
+						<div class="sidebar-row">
+							<h4>Kategori</h4>
+							<div class="row row1 scroll-pane">
+								<label class="checkbox"><%= check_box_tag :enj, "check", false, class: "checkbox" %><i></i><%= label_tag(:cat1, "Enjeksiyon Steroidler") %></label>
+								<label class="checkbox"><%= check_box_tag :tabl, "check", false, class: "checkbox" %><i></i><%= label_tag(:cat2, "Tablet Steroidler") %></label>
+								<label class="checkbox"><%= check_box_tag :pept, "check", false, class: "checkbox" %><i></i><%= label_tag(:cat3, "Peptidler") %></label>
+							</div>
+						</div>			 
+					</div>
+					<%= submit_tag("Filtrele") %>
+				</div>
+				<% end %>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+	<!--//products-->

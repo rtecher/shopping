@@ -39,7 +39,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="top-header navbar navbar-default"><!--header-one-->
       <div class="container">
         <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
-          <p>Welcome to Modern Shoppe <a href="register.html">Register </a> Or <a href="signin.html">Sign In </a></p>
+        <% if current_user %>
+          <p>Ojgeldiniz <%= current_user.email %> <%= link_to 'Çıkış Yap', destroy_user_session_path, method: :delete %></p>
+        <% else %>
+          <p>Ojgeldiniz be yaa <%= link_to 'Giriş Yap', new_user_session_path %> Or <%= link_to 'Üye Ol', new_user_registration_path %></p>
+        <% end %>
         </div>
         <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
           <ul>
@@ -63,12 +67,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </ul>
         </div>
         <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
-          <h1><a href="index.html">Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span> </a></h1>
+          <h1>
+          <%= link_to products_path do %>
+            Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span>
+          <% end %></h1>
         </div>
         <div class="nav navbar-nav navbar-right header-two-right">
           <div class="header-right my-account">
             <a href="contact.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> CONTACT US</a>           
           </div>
+          <% if current_user %>
           <div class="header-right cart">
             <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
             <h4><a href="checkout.html">
@@ -79,6 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <div class="clearfix"> </div>
             </div>
           </div>
+          <% end %>
           <div class="clearfix"> </div>
         </div>
         <div class="clearfix"> </div>
@@ -293,144 +302,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!--//navbar-collapse-->
             <header class="cd-main-header">
               <ul class="cd-header-buttons">
-                <li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+                <%= form_tag(detailed_products_index_path, method: "get", :class => "cd-header") do %>
+                  <%= text_field_tag(:search, "", class: "srcrtext") %>
+                  <%= submit_tag("Search", class: "srcr") %>
+                <% end %>
               </ul> <!-- cd-header-buttons -->
             </header>
           </div>
           <!--//navbar-header-->
         </nav>
-        <div id="cd-search" class="cd-search">
-          <form>
-            <input type="search" placeholder="Search...">
-          </form>
-        </div>
       </div>
     </div>
   </div>
+  <br>
   <!--//header-->
-<!--banner-->
-  <div class="banner">
-    <div class="container">
-      <div class="banner-text">     
-        <div class="col-sm-5 banner-left wow fadeInLeft animated" data-wow-delay=".5s">     
-          <h2>On Entire Fashion range</h2>
-          <h3>Coming Soon </h3>
-          <h4>Our New Designs</h4>
-          <div class="count main-row">
-            <ul id="example">
-              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-            </ul>
-              <div class="clearfix"> </div>
-          </div>
-
-        </div>
-        <div class="col-sm-7 banner-right wow fadeInRight animated" data-wow-delay=".5s">     
-          <section class="slider grid">
-            <div class="flexslider">
-              <ul class="slides">
-                <li>
-                  <h4>-30%</h4>
-                  <%= image_tag ("/assets/b1.png") %>
-                </li>
-                <li>
-                  <h4>-25%</h4>
-                  <%= image_tag ("/assets/b2.png") %>
-                </li>
-                <li>
-                  <h4>-32%</h4>
-                  <%= image_tag ("/assets/b3.png") %>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <!--FlexSlider-->
-          <script type="text/javascript">
-            $(window).load(function(){
-              $('.flexslider').flexslider({
-              animation: "pagination",
-              start: function(slider){
-                $('body').removeClass('loading');
-              }
-              });
-            });
-          </script>
-          <!--End-slider-script-->
-        </div>
-        <div class="clearfix"> </div>
-      </div>
-    </div>
-  </div>      
-  <!--//banner-->
   
   <%= yield %>
-  
-  <!--trend-->
-  <div class="trend wow zoomIn animated" data-wow-delay=".5s">
-    <div class="container">
-      <div class="trend-info">
-        <section class="slider grid">
-          <div class="flexslider trend-slider">
-            <ul class="slides">
-              <li>
-                <div class="col-md-5 trend-left">
-                  <%= image_tag ("/assets/t2.png") %>
-                </div>
-                <div class="col-md-7 trend-right">
-                  <h4>TOP 10 TRENDS <span>FOR YOU</span></h4>
-                  <h5>Flat 20% OFF</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus, justo ac volutpat vestibulum, dolor massa pharetra nunc, nec facilisis lectus nulla a tortor. Duis ultrices nunc a nisi malesuada suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu bibendum felis. Sed viverra dapibus tincidunt.</p>
-                </div>
-                <div class="clearfix"></div>
-              </li>
-              <li>
-                <div class="col-md-5 trend-left">
-                  <%= image_tag ("/assets/t2.png") %>
-                </div>
-                <div class="col-md-7 trend-right">
-                  <h4>TOP 10 TRENDS <span>FOR YOU</span></h4>
-                  <h5>Flat 20% OFF</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus, justo ac volutpat vestibulum, dolor massa pharetra nunc, nec facilisis lectus nulla a tortor. Duis ultrices nunc a nisi malesuada suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu bibendum felis. Sed viverra dapibus tincidunt.</p>
-                </div>
-                <div class="clearfix"></div>
-              </li>
-              <li>
-                <div class="col-md-5 trend-left">
-                  <%= image_tag ("/assets/t3.png") %>
-                </div>
-                <div class="col-md-7 trend-right">
-                  <h4>TOP 10 TRENDS <span>FOR YOU</span></h4>
-                  <h5>Flat 20% OFF</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus, justo ac volutpat vestibulum, dolor massa pharetra nunc, nec facilisis lectus nulla a tortor. Duis ultrices nunc a nisi malesuada suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu bibendum felis. Sed viverra dapibus tincidunt.</p>
-                </div>
-                <div class="clearfix"></div>
-              </li>
-              <li>
-                <div class="col-md-5 trend-left">
-                  <%= image_tag ("/assets/t4.png") %>
-                </div>
-                <div class="col-md-7 trend-right">
-                  <h4>TOP 10 TRENDS <span>FOR YOU</span></h4>
-                  <h5>Flat 20% OFF</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus, justo ac volutpat vestibulum, dolor massa pharetra nunc, nec facilisis lectus nulla a tortor. Duis ultrices nunc a nisi malesuada suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu bibendum felis. Sed viverra dapibus tincidunt.</p>
-                </div>
-                <div class="clearfix"></div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-  <!--//trend-->
   
   <!--footer-->
   <div class="footer">
     <div class="container">
       <div class="footer-info">
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".5s">
-          <h4 class="footer-logo"><a href="index.html">Modern <b>Shoppe</b> <span class="tag">Everything for Kids world </span> </a></h4>
+          <h4 class="footer-logo">
+          <%= link_to products_path do %>
+            Modern <b>Shoppe</b> <span class="tag">Everything for Kids world </span>
+            <% end %>
+          </h4>
           <p>© 2016 Modern Shoppe . All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
         </div>
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".7s">
