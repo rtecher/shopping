@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = Comment.where(product_id: @product)
-    @random_product = Product.where.not(id: @product ).order("RANDOM()").first
+    @random = Product.all.sample(3)
   end
 
   # GET /products/new

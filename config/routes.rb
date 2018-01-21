@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+  get 'pages/about_us'
+
+  get 'pages/communication'
+
   get 'detailed_products/index'
 
-  get 'sepets/index'
-
-  get 'sepets/create'
-
-  get 'sepets/destroy'
+  resources :sepets, only: [:index]
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

@@ -523,15 +523,15 @@ ul.multi-column-dropdown:nth-child(3) {
 .banner {
     background: #33414e;
     padding: 9em 0;
-	background:url(1.jpg)no-repeat 0px 0px;
+	background:url(arka4.jpg)no-repeat 0px 0px;
 	background-size:cover;
-}
+}/*
 .banner-right{
 	background:url(img3.jpg)no-repeat 0px 0px;
 	background-size:cover;
 	min-height:300px;
 	padding-top: 2em;
-}
+}*/
 .banner-left {
     text-align: center;
 }
@@ -552,7 +552,7 @@ ul.multi-column-dropdown:nth-child(3) {
     font-size: 2em;
     color: #fff;
     margin-bottom: 1em;
-}
+}/*
 .banner-right ul li {
 	position:relative;
 }
@@ -562,7 +562,7 @@ ul.multi-column-dropdown:nth-child(3) {
     color: #000;
     bottom: 21%;
     left: 27%;
-}
+}*/
 /*--countdown--*/
 ul#example {
     list-style: none;

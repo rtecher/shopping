@@ -25,6 +25,8 @@ gem 'activeadmin'
 gem 'simplecart-rails'
 gem "animate-rails"
 gem 'jquery-ui-rails'
+gem 'will_paginate', '~> 3.1.0'
+gem 'ratyrate'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'

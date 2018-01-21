@@ -102,7 +102,7 @@
   </div>
   <div class="related-products-info">
     <div class="new-info">
-      <% Product.all.take(3).each do |product| %>
+      <% @random.each do |product| %>
       <div class="col-md-3 new-grid new-mdl simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
         <div class="new-top">
           <a href="single.html"><%= image_tag product.image.url(:small), class: "img-responsive"%></a>
@@ -145,106 +145,3 @@
 </div>
 </div>
 <!--//single-page-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
-
-  <div class="row">
-
-    <div class="col-md-8">
-      <div class="thumbnail">
-        <%= image_tag @product.image.url(:slider) %>
-        <p class="username">
-        </p>
-
-
-
-          <div>
-            <% if current_user && current_user.sepets.where(product: @product).count > 0 %>
-              <%= link_to 'Sepeteten Çıkar', product_sepet_path(@product), method: :delete,  class: "star glyphicon glyphicon-star-empty btn btn-success" %>
-            <% else %>
-              <%= link_to 'Sepete Ekle', product_sepets_path(@product), method: :post,  class: "star glyphicon glyphicon-star-empty btn btn-success" %>
-            <% end %>
-          </div>
-
-          <div class="ratings">
-            <p class="pull-right"><%= @product.comments.count %> yorum </p>
-            <p>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star-empty"></span>
-              4.0 stars
-            </p>
-          </div>
-        </div>
-
-        <div class="well">
-          <%= render "comments/form" %>
-
-          <hr>
-
-          <% @comments.each do |comment| %>
-          <div class="row">
-            <div class="col-md-12">
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star-empty"></span>
-              <%= comment.user.username %>
-              <span class="pull-right"><%= comment.created_at %></span>
-              <p><%= comment.content %></p>
-            </div>
-          </div>
-          <% end %>
-
-          <hr>
-        </div>
-
-      </div>
-      <div class="col-md-3">
-        <p class="lead">İlginizi Çekebilecek Ürünler</p>
-          <% if @random_product %>
-          <div id="random_product">
-            <div class="product">
-              <div class="product_image">
-                <%= link_to (image_tag @random_product.image.url(:small)), product_path(@random_product) %>
-              </div>
-              <div class="product_content">
-                <div class="title">
-                  <h2>
-                    <%= link_to @random_product.title, product_path(@random_product) %>
-                  </h2>
-                </div>
-                <div class="data clearfix">
-                  
-                  <p class="buttons">
-                    <span>
-                      <i class="fa fa-comments-o"></i>
-                      <%= @random_product.comments.count %>
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <% end %>
-      </div>
-    </div>
-  </div>

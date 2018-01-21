@@ -16,38 +16,7 @@
           </div>
 
         </div>
-        <div class="col-sm-7 banner-right wow fadeInRight animated" data-wow-delay=".5s">     
-          <section class="slider grid">
-            <div class="flexslider">
-              <ul class="slides">
-                <li>
-                  <h4>-30%</h4>
-                  <%= image_tag ("/assets/b1.png") %>
-                </li>
-                <li>
-                  <h4>-25%</h4>
-                  <%= image_tag ("/assets/b2.png") %>
-                </li>
-                <li>
-                  <h4>-32%</h4>
-                  <%= image_tag ("/assets/b3.png") %>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <!--FlexSlider-->
-          <script type="text/javascript">
-            $(window).load(function(){
-              $('.flexslider').flexslider({
-              animation: "pagination",
-              start: function(slider){
-                $('body').removeClass('loading');
-              }
-              });
-            });
-          </script>
-          <!--End-slider-script-->
-        </div>
+        
         <div class="clearfix"> </div>
       </div>
     </div>
@@ -67,7 +36,7 @@
           <a href="single.html"><%= image_tag product.image.url(:small), class: "img-responsive"%></a>
           <div class="new-text">
             <ul>
-              <li><a class="item_add" href=""> Sepete Ekle</a></li>
+              <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
               <li><%= link_to 'Hızlı Bakış', product %></li>
               <li><%= link_to 'Detaylı Arama', detailed_products_index_path %></li>
             </ul>

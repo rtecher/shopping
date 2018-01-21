@@ -74,16 +74,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="nav navbar-nav navbar-right header-two-right">
           <div class="header-right my-account">
-            <a href="contact.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> CONTACT US</a>           
+            <%= link_to pages_communication_path do %><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> İLETİŞİM <% end %>           
           </div>
           <% if current_user %>
           <div class="header-right cart">
-            <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-            <h4><a href="checkout.html">
-                <span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) 
-            </a></h4>
+            <%= link_to sepets_path do %><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><% end %>
+            <h4><%= link_to sepets_path do %>
+                <span> Sepetim(<%= current_user.sepets.count %>) </span>
+            <% end %></h4>
             <div class="cart-box">
-              <p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
               <div class="clearfix"> </div>
             </div>
           </div>
@@ -107,196 +106,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <!--navbar-header-->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav top-nav-info">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Baby<b class="caret"></b></a>
-                <ul class="dropdown-menu multi-column multi-column1">
-                  <div class="row">
-                    <div class="col-sm-4 menu-grids menulist1">
-                      <h4>Bath & Care</h4>
-                      <ul class="multi-column-dropdown ">
-                        <li><a class="list" href="products.html">Diapering</a></li>
-                        <li><a class="list" href="products.html">Baby Wipes</a></li>
-                        <li><a class="list" href="products.html">Baby Soaps</a></li>
-                        <li><a class="list" href="products.html">Lotions & Oils </a></li>
-                        <li><a class="list" href="products.html">Powders</a></li>
-                        <li><a class="list" href="products.html">Shampoos</a></li>
-                      </ul>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Body Wash</a></li>
-                        <li><a class="list" href="products.html">Cloth Diapers</a></li>
-                        <li><a class="list" href="products.html">Baby Nappies</a></li>
-                        <li><a class="list" href="products.html">Medical Care</a></li>
-                        <li><a class="list" href="products.html">Grooming</a></li>
-                        <li><h6><a class="list" href="products.html">Combo Packs</a></h6></li>
-                      </ul>
-                    </div>                                    
-                    <div class="col-sm-2 menu-grids">
-                      <h4>Baby Clothes</h4>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Onesies & Rompers</a></li>
-                        <li><a class="list" href="products.html">Frocks</a></li>
-                        <li><a class="list" href="products.html">Socks & Tights</a></li>
-                        <li><a class="list" href="products.html">Sweaters & Caps</a></li>
-                        <li><a class="list" href="products.html">Night Wear</a></li>
-                        <li><a class="list" href="products.html">Quilts & Wraps</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-3 menu-grids">
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Blankets</a></li>
-                        <li><a class="list" href="products.html">Gloves & Mittens</a></li>
-                        <h4>Shop by Age</h4>
-                        <li><a class="list" href="products.html">New Born (0 - 5 M)</a></li>
-                        <li><a class="list" href="products.html">5 - 10 Months</a></li>
-                        <li><a class="list" href="products.html">10 - 15 Months</a></li>
-                        <li><a class="list" href="products.html">15 Months Above</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-3 menu-grids">
-                      <ul class="multi-column-dropdown">
-                        <li><h6><a class="list" href="products.html">Feeding & Nursing</a></h6></li>
-                        <h4>Baby Gear</h4>
-                        <li><a class="list" href="products.html">Baby Walkers</a></li>
-                        <li><a class="list" href="products.html">Strollers</a></li>
-                        <li><a class="list" href="products.html">Prams & Toys</a></li>
-                        <li><a class="list" href="products.html">Cribs & Cradles</a></li>
-                        <li><a class="list" href="products.html">Booster Seats</a></li>
-                      </ul>
-                    </div>
-                    <div class="clearfix"> </div>
-                  </div>
-                </ul>
-              </li>
+              <li><%= link_to "Anasayfa", products_path %></li>
+              <li><%= link_to "Detaylı Arama", detailed_products_index_path %></li>
               <li class="dropdown grid">
-                <a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Kids<b class="caret"></b></a>
-                <ul class="dropdown-menu multi-column multi-column2">
-                  <div class="row">
-                    <div class="col-sm-3 menu-grids">
-                      <h4>New Arrivals</h4>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Topwear</a></li>
-                        <li><a class="list" href="products.html">Bottomwear</a></li>
-                        <li><a class="list" href="products.html">Innerwear</a></li>
-                        <li><a class="list" href="products.html">Nightwear</a></li>
-                        <li><a class="list" href="products.html">Swimwear</a></li>
-                        <li><a class="list" href="products.html">Jumpers</a></li>
-                      </ul>
-                    </div>                                    
-                    <div class="col-sm-3 menu-grids">
-                      <h4>Boys</h4>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Jeans</a></li>
-                        <li><a class="list" href="products.html">Shirts</a></li>
-                        <li><a class="list" href="products.html">T-shirts</a></li>
-                        <li><a class="list" href="products.html">Dhoti Kurta Sets</a></li>
-                        <li><a class="list" href="products.html">Winter wear</a></li>
-                        <li><a class="list" href="products.html">Party Wear</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-3 menu-grids">
-                      <h4>Girls</h4>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Tops</a></li>
-                        <li><a class="list" href="products.html">Leggings</a></li>
-                        <li><a class="list" href="products.html">Dresses </a></li>
-                        <li><a class="list" href="products.html">Skirts</a></li>
-                        <li><a class="list" href="products.html">Casual Dresses</a></li>
-                        <li><a class="list" href="products.html">Capris & 3/4ths</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-3 menu-grids new-add2">
-                      <a href="products.html">
-                        <h6>Kids Special</h6>
-                        <%= image_tag ("/assets/img1.jpg") %>
-                      </a>
-                    </div>
-                    <div class="clearfix"> </div>
-                  </div>
-                </ul>
-              </li>
-              <li class="dropdown grid">
-                <a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Accessories<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Kategoriler<b class="caret"></b></a>
                 <ul class="dropdown-menu multi-column menu-two multi-column3">
                   <div class="row">
-                    <div class="col-sm-4 menu-grids">
                       <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Jewellery</a></li>
-                        <li><a class="list" href="products.html">Hair bands & Clips</a></li>
-                        <li><a class="list" href="products.html">Bangles </a></li>
-                        <li><a class="list" href="products.html">Caps & Belts</a></li>
-                        <li><a class="list" href="products.html">Rain wear</a></li>
-                        <li><a class="list" href="products.html">Bags</a></li>
+                        <li><%= link_to 'Enjeksiyon Steroidler', detailed_products_index_path("minprice"=>"", "maxprice"=>"", "enj"=>"check") %></li>
+                        <li><%= link_to 'Tablet Steroidler', detailed_products_index_path("minprice"=>"", "maxprice"=>"", "tabl"=>"check") %></li>
+                        <li><%= link_to 'Peptidler', detailed_products_index_path("minprice"=>"", "maxprice"=>"", "pept"=>"check") %></li>
                       </ul>
-                    </div>
-                    <div class="col-sm-8 menu-grids">
-                      <a href="products.html">
-                        <div class="new-add">
-                          <h5>30% OFF <br> Today Only</h5>
-                        </div>  
-                      </a>
-                    </div>  
                     <div class="clearfix"> </div>
                   </div>  
                 </ul>
               </li>       
-              <li class="dropdown grid">
-                <a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Toys <b class="caret"></b></a>
-                <ul class="dropdown-menu multi-column multi-column4">
-                  <div class="row">
-                    <div class="col-sm-4 menu-grids menulist1">
-                      <h4>BABY</h4>
-                      <ul class="multi-column-dropdown ">
-                        <li><a class="list" href="products.html">Rockers</a></li>
-                        <li><a class="list" href="products.html">Rattles</a></li>
-                        <li><a class="list" href="products.html">Stroller Toys</a></li>
-                        <li><a class="list" href="products.html">Musical Toys </a></li>
-                        <li><a class="list" href="products.html">Doll Houses</a></li>
-                        <li><a class="list" href="products.html">Play Sets</a></li>
-                      </ul>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Toys Dolls</a></li>
-                        <li><a class="list" href="products.html">Pacifiers</a></li>
-                        <li><a class="list" href="products.html">Building Sets</a></li>
-                        <li><a class="list" href="products.html">Bath Toys</a></li>
-                        <li><a class="list" href="products.html">Soft Toys</a></li>
-                        <li><h6><a class="list" href="products.html">Special Off</a></h6></li>
-                      </ul>
-                    </div>                                    
-                    <div class="col-sm-2 menu-grids">
-                      <h4>Pretend Play</h4>
-                      <ul class="multi-column-dropdown">
-                        <li><h6><a class="list" href="products.html">Video Games</a></h6></li>
-                        <li><a class="list" href="products.html">Kitchen Sets</a></li>
-                        <li><a class="list" href="products.html">Sand Toys</a></li>
-                        <li><a class="list" href="products.html">Tool Sets</a></li>
-                        <li><a class="list" href="products.html">Bath Toys</a></li>
-                        <li><a class="list" href="products.html">Medical Set</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-2 menu-grids">
-                      <h4>Outdoor</h4>
-                      <ul class="multi-column-dropdown">
-                        <li><a class="list" href="products.html">Swimming</a></li>
-                        <li><a class="list" href="products.html">Rideons </a></li>
-                        <li><a class="list" href="products.html">Scooters</a></li>
-                        <li><a class="list" href="products.html">Remote Control</a></li>
-                        <li><a class="list" href="products.html">Animals</a></li>
-                        <li><a class="list" href="products.html">Make up</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-4 menu-grids">
-                      <a href="products.html">
-                        <div class="new-add">
-                          <h5>30% OFF <br> Today Only</h5>
-                        </div>
-                      </a>  
-                    </div>
-                    <div class="clearfix"> </div>
-                  </div>
-                </ul>
-              </li>
-              <li><a href="codes.html">Special Offers</a></li>
+              <li><%= link_to 'Hakkımızda', pages_about_us_path %></li>
+              <li><%= link_to 'İletişim', pages_communication_path %></li>
             </ul> 
             <div class="clearfix"> </div>
             <!--//navbar-collapse-->
@@ -332,13 +158,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <p>© 2016 Modern Shoppe . All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
         </div>
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".7s">
-          <h3>Popular</h3>
+          <h3>Popüler</h3>
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">new</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="checkout.html">Wishlist</a></li>
+            <li><%= link_to 'Anasayfa', products_path %></li>
+            <li><%= link_to 'Hakkımızda', pages_about_us_path %></li>
+            <li><%= link_to 'İletişim', pages_communication_path %></li>
           </ul>
         </div>
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".9s">

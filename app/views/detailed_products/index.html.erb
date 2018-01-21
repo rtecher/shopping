@@ -10,7 +10,7 @@
 						<ul>
 							<li><%= link_to 'Hızlı Bakış', product %></li>
 							<li><input type="number" class="item_quantity" min="1" value="1"></li>
-							<li><a class="item_add" href=""> Sepete Ekle</a></li>
+							<li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
 						</ul>
 					</div>
 				</div>
@@ -34,6 +34,7 @@
 				</div>
 			</div>
 			<% end %>
+			<%= will_paginate @products %>
 		</div>
 		<div class="col-md-3 rsidebar">
 			<div class="rsidebar-top">
@@ -60,7 +61,7 @@
 							</div>
 						</div>			 
 					</div>
-					<%= submit_tag("Filtrele") %>
+					<%= submit_tag("Filtrele", class: "srcr") %>
 				</div>
 				<% end %>
 				<div class="clearfix"> </div>

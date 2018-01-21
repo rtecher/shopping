@@ -9,21 +9,22 @@ class SepetsController < ApplicationController
   def create
   	@sepet = Sepet.new(sepet_params)
   	@sepet.user = current_user
-    respond_to do |format|
-    	if @sepet.save
-    		  format.html { redirect_to @product, notice: 'Favorilere eklendi.' }
-          format.json { render :show, status: :ok, location: @product }
-      else
-          format.html { render @product }
-          format.json { render json: @sepet.errors, status: :unprocessable_entity }
-    	end
-    end
+
+   if @sepet.save
+    flash.now[:notice] = 'Favorilere eklendi!'
+   else
+    flash.now[:alert] = 'Hata!'
+   end
+  respond_to do |format|
+    format.html { redirect_to products_url}
   end
+end
 
   def destroy
   	@sepet.destroy
+    flash.now[:alert] = 'Favorilerden Çıkarıldı!'
     respond_to do |format|
-      format.html { redirect_to @product, notice: 'Favorilerden çıkarıldı.' }
+      format.html { redirect_to sepets_path }
       format.json { head :no_content }
     end
   end

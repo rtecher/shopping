@@ -8,7 +8,9 @@ ActiveAdmin.register Product do
   		f.input :trademark, required: true
   		f.input :price, required: true
   		f.input :discount
-  		f.input :category, required: true
+      f.label :category, "category" 
+      f.select :category, options_for_select(["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"])
+  		#f.input :category, required: true
   	end
   	f.actions
   end

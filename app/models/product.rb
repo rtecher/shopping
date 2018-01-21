@@ -3,6 +3,14 @@ class Product < ApplicationRecord
 	has_many :sepets
 	has_attached_file :image, styles: { small: "320x150#" ,slider: "800x300#" }
 	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+	validate :inside_category
+
+	def inside_category
+		categories = ["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"]
+		if !categories.include? category
+			errors.add(:category, "Kategorilerin dışında")
+		end
+	end
 
 
 	def self.search(search)
