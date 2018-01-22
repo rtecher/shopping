@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
-  resources :products do
+  resources :products, only: [:index, :show] do
     resources :comments
     resources :sepets, only: [:create, :destroy]
   end

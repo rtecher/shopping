@@ -4,11 +4,10 @@
 	<div class="login-page">
 		<div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
 			<h3 class="title">Giriş Yapın<span> Form</span></h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
 		</div>
 		<div class="widget-shadow">
 			<div class="login-top wow fadeInUp animated" data-wow-delay=".7s">
-				<h4>Welcome back to Modern Shoppe ! <br> Not a Member? <a href="register.html">  Register Now »</a> </h4>
+				<h4>HitSteroide Hoşgeldiniz ! <br> Üye Değil misiniz? <%= link_to 'Üye Ol', new_user_registration_path %> </h4>
 			</div>
 			<div class="login-body wow fadeInUp animated" data-wow-delay=".7s">
 				<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -19,15 +18,10 @@
 					</div>
 
 					<div class="form-actions">
-						<%= f.button :submit, "Log in" %>
+						<%= f.button :submit, "Giriş Yap" %>
 					</div>
 				<% end %>
 			</div>
-		</div>
-		<div class="login-page-bottom">
-			<h5> - OR -</h5>
-			<div class="social-btn"><a href="#"><i>Sign In with Facebook</i></a></div>
-			<div class="social-btn sb-two"><a href="#"><i>Sign In with Twitter</i></a></div>
 		</div>
 	</div>
 	<!--//login-->

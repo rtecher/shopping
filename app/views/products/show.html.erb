@@ -79,7 +79,7 @@
                 <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star-empty"></span>
-                <%= comment.user.username %>
+                <%= comment.user.username || comment.user.email %>
                 <span class="pull-right"><%= comment.created_at %></span>
                 <p><%= comment.content %></p>
               </div>
@@ -98,7 +98,6 @@
 <div class="related-products">
   <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
     <h3 class="title">Benzer<span> Ürünler</span></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
   </div>
   <div class="related-products-info">
     <div class="new-info">
