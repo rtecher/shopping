@@ -1,8 +1,7 @@
 class Product < ApplicationRecord
 	has_many :comments
 	has_many :sepets
-	has_attached_file :image, styles: { small: "320x150#" ,slider: "800x300#" }
-	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+	mount_uploader :image, ImageUploader
 	validate :inside_category
 
 	def inside_category

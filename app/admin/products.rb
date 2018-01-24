@@ -4,7 +4,7 @@ ActiveAdmin.register Product do
   	f.inputs "Upload", :multipart => true do
   		f.input :title, required: true
   		f.input :description, required: true
-  		f.input :image, as: :file, required: true
+  		f.file_field :image, required: true
   		f.input :trademark, required: true
   		f.input :price, required: true
   		f.input :discount
