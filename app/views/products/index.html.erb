@@ -24,7 +24,7 @@
       <% Product.all.take(4).each do |product| %>
       <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
         <div class="new-top">
-          <a href="single.html"><%= image_tag product.image, class: "img-responsive"%></a>
+          <a href="single.html"><%= image_tag product.image.url, class: "img-responsive"%></a>
           <div class="new-text">
             <ul>
               <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
@@ -70,7 +70,7 @@
       <% Product.all.take(4).each do |product| %>
       <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
         <div class="new-top">
-          <a href="single.html"><%= image_tag product.image, class: "img-responsive"%></a>
+          <a href="single.html"><%= image_tag product.image.url, class: "img-responsive"%></a>
           <div class="new-text">
             <ul>
               <li><a class="item_add" href=""> Sepete Ekle</a></li>
