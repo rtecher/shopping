@@ -40,9 +40,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
         <% if current_user %>
-          <p>Ojgeldiniz <%= current_user.email %> <%= link_to 'Çıkış Yap', destroy_user_session_path, method: :delete %></p>
+          <p>Hoşgeldiniz <%= current_user.email %> <%= link_to 'Çıkış Yap', destroy_user_session_path, method: :delete %></p>
         <% else %>
-          <p>Ojgeldiniz be yaa <%= link_to 'Giriş Yap', new_user_session_path %> Or <%= link_to 'Üye Ol', new_user_registration_path %></p>
+          <p>Hoşgeldiniz <%= link_to 'Giriş Yap', new_user_session_path %> Or <%= link_to 'Üye Ol', new_user_registration_path %></p>
         <% end %>
         </div>
         <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
           <h1>
           <%= link_to products_path do %>
-            Hit <b>Streroid</b><span class="tag">Şembambi şembambi </span>
+            Hit <b>Streroid</b><span class="tag">Orjinal, Kalite </span>
           <% end %></h1>
         </div>
         <div class="nav navbar-nav navbar-right header-two-right">
@@ -149,10 +149,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".5s">
           <h4 class="footer-logo">
           <%= link_to products_path do %>
-            Hit <b>Steroid</b> <span class="tag">Everything for Kids world </span>
+            Hit <b>Steroid</b> <span class="tag">Orjinal, Kalite </span>
             <% end %>
           </h4>
-          <p>© 2018 HitStereroid . Tüm Hakları Saklıdır | Design by DeCoders</p>
+          <p>© 2018 HitSteroid . Tüm Hakları Saklıdır</p>
         </div>
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".7s">
           <h3>Popüler</h3>
@@ -164,11 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="col-md-4 footer-grids wow fadeInUp animated" data-wow-delay=".9s">
           <h3>Abone Ol</h3>
-          <p>Daha fazla bilgi için <br> Üye olun </p>
-          <form>
-            <input type="text" placeholder="Enter Your Email" required="">
-            <input type="submit" value="Go">
-          </form>
+          <p>Daha fazla bilgi için <br> <%= link_to 'Üye Olun', new_user_registration_path %></p> </p>
         </div>
         <div class="clearfix"></div>
       </div>

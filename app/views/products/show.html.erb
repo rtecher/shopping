@@ -24,10 +24,9 @@
         <a href="#">Add Your Review</a>
       </div>
       <h6 class="item_price"><%= @product.price %> TL</h6>     
-      <p><%= @product.description %></p>
       
       <div class="quantity">
-        <p class="qty"> Qty :  </p><input min="1" type="number" value="1" class="item_quantity">
+        <p class="qty"> Adet :  </p><input min="1" type="number" value="1" class="item_quantity">
       </div>
       <div class="btn_form">
         <% if current_user && current_user.sepets.where(product: @product).count > 0 %>
