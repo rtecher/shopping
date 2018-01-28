@@ -9,14 +9,22 @@
     <div class="login-body">
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), class:"wow fadeInUp animated") do |f| %>
         <%= f.error_notification %>
-        <%= f.input :name, required: true, autofocus: true , class: "srcrtext" %>
-        <%= f.input :surname, required: true, class: "srcrtext" %>
-        <%= f.input :username, required: true, class: "srcrtext" %>
-        <%= f.input :address, required: true, class: "srcrtext" %>
-        <%= f.input :phone, required: true, class: "srcrtext" %>
-        <%= f.input :email, required: true, class: "srcrtext" %>
-        <%= f.input :password, required: true, class: "srcrtext", hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-        <%= f.input :password_confirmation, required: true, class: "srcrtext" %>
+        <%= f.label :name, "Ad" %>
+        <%= f.input :name, required: true, autofocus: true , class: "fields" %>
+        <%= f.input :surname, required: true, class: "fields" %>
+        <%= f.input :username, required: true, class: "fields" %>
+        <%= f.input :address, required: true, class: "fields" %>
+        <%= f.input :phone, required: true, class: "fields" %>
+        <%= f.label :email, "Email" %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.label :password, 'Parola' %>
+        <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> karakter minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, required: true, autocomplete: "off" %>
+        
+        <%= f.label :password_confirmation, 'Parolayo tekrar giriniz' %><br />
+        <%= f.password_field :password_confirmation, required: true, autocomplete: "off" %>
         
         <div class="form-actions">
             <%= f.button :submit, "Üye Ol" %>

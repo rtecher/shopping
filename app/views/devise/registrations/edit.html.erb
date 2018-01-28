@@ -1,33 +1,45 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-
-    <%= f.input :name, required: true, autofocus: true %>
-    <%= f.input :surname, required: true, autofocus: true %>
-    <%= f.input :username, required: true, autofocus: true %>
-    <%= f.input :address, required: true, autofocus: true %>
-    <%= f.input :phone, required: true, autofocus: true %>
-    <%= f.input :email, required: true, autofocus: true %>
-
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-    <% end %>
-
-    <%= f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false %>
-    <%= f.input :password_confirmation, required: false %>
-    <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true %>
+<div class="login-page">
+  <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
+    <h3 class="title">Üye olma<span> Form</span></h3>
   </div>
+  <div class="widget-shadow">
+    <div class="login-top wow fadeInUp animated" data-wow-delay=".7s">
+      <h4>Hesabınız Var mı ?<%= link_to 'Giriş Yap', new_user_session_path %> </h4>
+    </div>
+    <div class="login-body">
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+          <%= f.error_notification %>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Update" %>
+          <div class="form-inputs">
+
+            <%= f.input :name, required: true, autofocus: true %>
+            <%= f.input :surname, required: true, autofocus: true %>
+            <%= f.input :username, required: true, autofocus: true %>
+            <%= f.input :address, required: true, autofocus: true %>
+            <%= f.input :phone, required: true, autofocus: true %>
+            <%= f.input :email, required: true, autofocus: true %>
+
+            <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+            <% end %>
+
+            <%= f.input :password, autocomplete: "off", hint: "Parolayı değiştirmek istemiyorsanız boş bırakın", required: false %>
+            <%= f.input :password_confirmation, required: false %>
+            <%= f.input :current_password, hint: "Parolanızı onaylamak için tekrar giriniz", required: true %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Güncelle" %>
+          </div>
+        <% end %>
+
+        <h3>Cancel my account</h3>
+
+        <p>Unhappy? <%= link_to "Hesabı Kapat", registration_path(resource_name), data: { confirm: "Hesabınızı silmek istediğinize emin misiniz?" }, method: :delete %></p>
+
+        <%= link_to "Geri", :back %>
+    </div>
   </div>
-<% end %>
+</div>
 
-<h3>Cancel my account</h3>
 
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Shopping</title>
+<title>HitSteroid</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
         <% if current_user %>
-          <p>Hoşgeldiniz <%= current_user.email %> <%= link_to 'Çıkış Yap', destroy_user_session_path, method: :delete %></p>
+          <p>Hoşgeldiniz <%= link_to current_user.email, edit_user_registration_path %> <%= link_to 'Çıkış Yap', destroy_user_session_path, method: :delete %></p>
         <% else %>
           <p>Hoşgeldiniz <%= link_to 'Giriş Yap', new_user_session_path %> Or <%= link_to 'Üye Ol', new_user_registration_path %></p>
         <% end %>
@@ -62,6 +62,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>(+90)5468752515</li>
             <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@hitsteroid.com">info@hitsteroid.com</a></li>      
           </ul>
+
+          <%= image_tag "http://res.cloudinary.com/diit0qzwp/image/upload/c_scale,w_62/v1517158666/kap%C4%B1da-%C3%B6deme-renkli_jzazd4.png" %> <span> Kapıda Ödeme </span>
         </div>
         <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
           <h1>
@@ -113,6 +115,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li><%= link_to 'Enjeksiyon Steroidler', detailed_products_index_path("minprice"=>"", "maxprice"=>"", "enj"=>"check") %></li>
                         <li><%= link_to 'Tablet Steroidler', detailed_products_index_path("minprice"=>"", "maxprice"=>"", "tabl"=>"check") %></li>
                         <li><%= link_to 'Peptidler', detailed_products_index_path("minprice"=>"", "maxprice"=>"", "pept"=>"check") %></li>
+                      </ul>
+                    <div class="clearfix"> </div>
+                  </div>  
+                </ul>
+              </li> 
+              <li class="dropdown grid">
+                <a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Markalar<b class="caret"></b></a>
+                <ul class="dropdown-menu multi-column menu-two multi-column3">
+                  <div class="row">
+                      <ul class="multi-column-dropdown">
+                        <u>Enjeksiyon Steroidler</u>
+                          <li><%= link_to 'Iron pharma', detailed_products_index_path("trademark"=>"İron pharma") %></li>
+                          <li><%= link_to 'Generics Pharma', detailed_products_index_path("trademark"=>"Generics Pharma") %></li>
+                          <li><%= link_to 'Omega Meds', detailed_products_index_path("trademark"=>"Omega Meds") %></li>
+                          <li><%= link_to 'Genesis Meds', detailed_products_index_path("trademark"=>"Genesis Meds") %></li>
+                          <li><%= link_to 'JD Pharma', detailed_products_index_path("trademark"=>"JD Pharma") %></li>
+                          <li><%= link_to 'Leon Labs', detailed_products_index_path("trademark"=>"Leon Labs") %></li>
+                        <u>Tablet Steroidler</u>
+                          <li><%= link_to 'Balkan Pharma', detailed_products_index_path("trademark"=>"Balkan Pharma") %></li>
+                          <li><%= link_to 'Muscle Labs', detailed_products_index_path("trademark"=>"Muscle Labs") %></li>
+                        <u>Peptitler</u>
+                          <li><%= link_to 'Kigtropin', detailed_products_index_path("trademark"=>"Kigtropin") %></li>
                       </ul>
                     <div class="clearfix"> </div>
                   </div>  

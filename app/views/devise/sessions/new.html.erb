@@ -1,5 +1,4 @@
-<h2>Log in</h2>
-
+<title>Hit Steroid Giriş</title>
 <!--login-->
 	<div class="login-page">
 		<div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
@@ -10,17 +9,25 @@
 				<h4>HitSteroide Hoşgeldiniz ! <br> Üye Değil misiniz? <%= link_to 'Üye Ol', new_user_registration_path %> </h4>
 			</div>
 			<div class="login-body wow fadeInUp animated" data-wow-delay=".7s">
-				<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+				<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 					<div class="form-inputs">
-						<%= f.input :email, required: false, autofocus: true, placeholder:"Enter your email" %>
-						<%= f.input :password, required: false, placeholder:"Password" %>
-						<%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+						<%= f.label :email, "Email Adresi" %>
+						<%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email adresi" %><br />
+						<%= f.label :password, "Parola" %>
+						<%= f.password_field :password, autocomplete: "off", placeholder:"Parola" %><br />
+						<% if devise_mapping.rememberable? -%>
+						    <div class="field">
+						      <%= f.check_box :remember_me %>
+						      <%= f.label :remember_me %>
+						    </div>
+						  <% end -%>
 					</div>
 
 					<div class="form-actions">
-						<%= f.button :submit, "Giriş Yap" %>
+						<%= f.submit "Giriş Yap" %>
 					</div>
 				<% end %>
+				<%= render "devise/shared/links" %>
 			</div>
 		</div>
 	</div>

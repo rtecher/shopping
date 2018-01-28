@@ -4,6 +4,66 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+#user_email{
+  max-width:400px;
+    width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+
+#user_adress{
+  max-width:400px;
+    width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+
+#user_password{
+  max-width:400px;
+    width: 80%;
+  line-height:1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+
+.fields{
+  max-width:400px;
+    width: 80%;
+  line-height:1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+
+#user_password_confirmation{
+    max-width:400px;
+    width: 80%;
+  line-height:1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+
 body{
 	margin:0;
 	font-family: 'Raleway', sans-serif;
@@ -536,7 +596,7 @@ ul.multi-column-dropdown:nth-child(3) {
     text-align: center;
 }
 .banner h2 {
-    color: #fff;
+    color: #F07818;
     font-size: 3em;
 }
 .banner-text h3 {
@@ -1502,14 +1562,15 @@ h4.panel-title a {
     color: #353f49;
 }
 .login-page input[type="text"], .login-page input[type="password"] {
-    font-size: 1em;
-    padding: 0.9em 1em;
-    width: 100%;
-    color: #999;
-    outline: none;
-    border: 1px solid #E2DCDC;
-    background: #FFFFFF;
-    margin: 0em 0em 1em 0em;
+    max-width:400px;
+    width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
 }
 /*--placeholder--*/
 .login-page ::-webkit-input-placeholder{

@@ -10,6 +10,10 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
+    if Comment.where(:confirmed == nil)
+        link_to "yeni yorumlar var", admin_comments_path
+    end
+
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
