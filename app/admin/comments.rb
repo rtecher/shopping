@@ -1,3 +1,4 @@
 ActiveAdmin.register Comment, :as => "ProductComment" do
-  permit_params :content
+	menu label: "Ürün Yorumları"
+  permit_params :content, :confirmed
 end

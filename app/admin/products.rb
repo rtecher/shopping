@@ -1,4 +1,5 @@
 ActiveAdmin.register Product do
+  menu label: "Ürünler"
   permit_params :title,:description, :image, :trademark,:price,:discount,:category
   form do |f|
   	f.inputs "Upload", :multipart => true do

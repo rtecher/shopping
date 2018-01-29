@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = Comment.where(product_id: @product)
+    @comments = Comment.where(product_id: @product).where(:confirmed => true)
     @random = Product.all.sample(3)
   end
 

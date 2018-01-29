@@ -21,7 +21,7 @@
           <input id="rating1" type="radio" name="rating" value="1">
           <label for="rating1">1</label>
         </span>
-        <p>5.00 out of 5</p>
+        <p>5.00 üzerinden 5</p>
         <a href="#">Add Your Review</a>
       </div>
       <h6 class="item_price"><%= @product.price %> TL</h6>     
@@ -66,24 +66,25 @@
       </div>
       <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
         <div class="panel-body">
+          <p id="notice"><%= notice %></p>
             <div class="well">
             <%= render "comments/form" %>
 
             <hr>
 
             <% @comments.each do |comment| %>
-            <div class="row">
-              <div class="col-md-12">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <%= comment.user.username || comment.user.email %>
-                <span class="pull-right"><%= comment.created_at %></span>
-                <p><%= comment.content %></p>
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                  <%= comment.user.username || comment.user.email %>
+                  <span class="pull-right"><%= comment.created_at %></span>
+                  <p><%= comment.content %></p>
+                </div>
               </div>
-            </div>
             <% end %>
 
             <hr>

@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @product, notice: 'Comment was successfully created.' }
+        format.html { redirect_to @product, notice: 'Yorum onaylanmak için gönderildi.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
