@@ -21,10 +21,10 @@
       <h3 class="title">Yeni <span>Gelenler</span></h3>
     </div>
     <div class="new-info">
-      <% Product.all.take(4).each do |product| %>
+      <% @new_products.each do |product| %>
       <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
         <div class="new-top">
-          <a href="single.html"><%= image_tag product.image.url, size: "320x150", class: "img-responsive"%></a>
+          <%= link_to image_tag(product.image.url, size: "320x150", class: "img-responsive"), product %>
           <div class="new-text">
             <ul>
               <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
@@ -73,7 +73,7 @@
           <a href="single.html"><%= image_tag product.image.url, size: "320x150", class: "img-responsive"%></a>
           <div class="new-text">
             <ul>
-              <li><a class="item_add" href=""> Sepete Ekle</a></li>
+              <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
               <li><%= link_to 'Hızlı Bakış', product %></li>
               <li><%= link_to 'Detaylı Arama', detailed_products_index_path %></li>
             </ul>
