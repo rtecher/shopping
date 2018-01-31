@@ -24,7 +24,12 @@
         <p>5.00 üzerinden 5</p>
         <a href="#">Add Your Review</a>
       </div>
-      <h6 class="item_price"><%= @product.price %> TL</h6>     
+      <% if @product.discount %>
+            <h6 class="pric1"><del><%= @product.price %> TL</del></h6>
+            <p><h6 class="item_price"><%= @product.discount %> TL</h6></p>
+            <% else %>
+            <p><h6 class="item_price"><%= @product.price %> TL</h6></p>
+      <% end %>
       
       <div class="quantity">
         <p class="qty"> Adet :  </p><input min="1" type="number" value="1" class="item_quantity">

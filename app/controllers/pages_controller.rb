@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def communication
   end
+
+  def references
+  	@references = Reference.all
+  end
 end

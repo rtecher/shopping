@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'pages/communication'
 
+  get 'pages/references'
+
   get 'detailed_products/index'
 
   resources :sepets, only: [:index]

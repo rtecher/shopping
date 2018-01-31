@@ -69,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
           <h1>
           <%= link_to products_path do %>
-            Hit <b>Streroid</b><span class="tag">Orjinal, Kalite </span>
+            Hit<b>Steroid</b><span class="tag">Orjinal, Kalite </span>
           <% end %></h1>
         </div>
         <div class="nav navbar-nav navbar-right header-two-right">
@@ -144,18 +144,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </ul>
               </li>       
               <li><%= link_to 'Hakkımızda', pages_about_us_path %></li>
+              <li><%= link_to 'Referanslar', pages_references_path %></li>
               <li><%= link_to 'İletişim', pages_communication_path %></li>
-            </ul> 
-            <div class="clearfix"> </div>
-            <!--//navbar-collapse-->
-            <header class="cd-main-header">
-              <ul class="cd-header-buttons">
+              <li class="cd-header-buttons">
                 <%= form_tag(detailed_products_index_path, method: "get", :class => "cd-header") do %>
                   <%= text_field_tag(:search, "", class: "srcrtext") %>
                   <%= submit_tag("Search", class: "srcr") %>
                 <% end %>
-              </ul> <!-- cd-header-buttons -->
-            </header>
+              </li> 
+            </ul> 
+            <div class="clearfix"> </div>
+            <!--//navbar-collapse-->
+            
           </div>
           <!--//navbar-header-->
         </nav>
