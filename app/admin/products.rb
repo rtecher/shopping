@@ -1,6 +1,6 @@
 ActiveAdmin.register Product do
   menu label: "Ürünler"
-  permit_params :title,:description, :image, :trademark,:price,:discount,:category
+  permit_params :title,:description, :image, :trademark,:price,:discount,:category, :marka
   form do |f|
   	f.inputs "Upload", :multipart => true do
   		f.input :title, required: true
@@ -11,7 +11,7 @@ ActiveAdmin.register Product do
   		f.input :discount
       f.label :category, "category" 
       f.select :category, options_for_select(["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"])
-      f.input :marka, required: true
+      f.input :marka
   		#f.input :category, required: true
   	end
   	f.actions

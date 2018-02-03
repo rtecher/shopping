@@ -1,4 +1,4 @@
 ActiveAdmin.register Reference do
 	menu label: "Referanslar"
-  permit_params :url
+  permit_params :name
 end
