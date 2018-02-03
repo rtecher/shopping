@@ -3,7 +3,7 @@ class Product < ApplicationRecord
 	has_many :sepets
 	mount_uploader :image, ImageUploader
 	validate :inside_category
-	belongs_to :marka
+	belongs_to :marka, optional: true
 
 	def inside_category
 		categories = ["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"]
