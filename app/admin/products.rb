@@ -11,6 +11,7 @@ ActiveAdmin.register Product do
   		f.input :discount
       f.label :category, "category" 
       f.select :category, options_for_select(["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"])
+      f.input :marka, required: true
   		#f.input :category, required: true
   	end
   	f.actions
