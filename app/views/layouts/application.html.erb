@@ -126,18 +126,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="dropdown-menu multi-column menu-two multi-column3">
                   <div class="row">
                       <ul class="multi-column-dropdown">
-                        <u>Enjeksiyon Steroidler</u>
-                          <li><%= link_to 'Iron pharma', detailed_products_index_path("trademark"=>"İron pharma") %></li>
-                          <li><%= link_to 'Generics Pharma', detailed_products_index_path("trademark"=>"Generics Pharma") %></li>
-                          <li><%= link_to 'Omega Meds', detailed_products_index_path("trademark"=>"Omega Meds") %></li>
-                          <li><%= link_to 'Genesis Meds', detailed_products_index_path("trademark"=>"Genesis Meds") %></li>
-                          <li><%= link_to 'JD Pharma', detailed_products_index_path("trademark"=>"JD Pharma") %></li>
-                          <li><%= link_to 'Leon Labs', detailed_products_index_path("trademark"=>"Leon Labs") %></li>
-                        <u>Tablet Steroidler</u>
-                          <li><%= link_to 'Balkan Pharma', detailed_products_index_path("trademark"=>"Balkan Pharma") %></li>
-                          <li><%= link_to 'Muscle Labs', detailed_products_index_path("trademark"=>"muscle labs") %></li>
-                        <u>Peptitler</u>
-                          <li><%= link_to 'Kigtropin', detailed_products_index_path("trademark"=>"kigtropin") %></li>
+                        <% @markalar.each do |marka| %>
+                          <li><%= link_to marka.name, detailed_products_index_path("trademark"=>marka.name) %></li>
+                        <% end %>
                       </ul>
                     <div class="clearfix"> </div>
                   </div>  
