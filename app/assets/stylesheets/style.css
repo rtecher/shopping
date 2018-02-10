@@ -968,9 +968,13 @@ h3.title span {
     margin-right:1.5em;
 }
 .new-bottom h5 {
+    height: 3em;
+    display: inline-block;
+    line-height: 1em;
+    overflow: hidden;
+    text-align: center;
     font-size: 1.8em;
     font-weight: 900;
-    display: inline-block;
 }
 .new-bottom h5 a.name {
     color: #353f49;
