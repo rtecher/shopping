@@ -15,309 +15,309 @@
 # # Product.create title: 'Iron Pharma Tren Mix 150 mg', description: 'Deca Mix 4 esterli Bir deca türevidir.Decadan kısaca bahsedecek olursak bulk amaçlı kullanılan en etkili maddedir.Definasyon döneminde kullanılması uygun olmaz.Bu sebebi Deca Vücuda kas kazanımı yaparken yanında tutacağı su kütlesinden dolayı hatlı görünümü engeller.Deca 19-a Grubu dahildir 17 grubuna göre çok daha yüksek anabolik güce sahiptir.Resöptörlere çok güçlü bağlanır yanında başka bir 19-a(örn trnbolone) grubu kullanıldığında resöptörü kapattığı için 2.19-a grubu maddemiz tam randımanlı çalışmayacağından dolayı başka bir anabolizon eklecekse 17 grubundan(örn:boldenon,primobolon) ekleme yapılmalıdır.', trademark: 'İron pharma', price: 200, category: "Enjeksiyon Steroidler", image: 
 # # File.new("#{Rails.root}/app/assets/images/IP4.png")
 
-# Product.create title: 'Iron Pharma Deca MİX 400 mg', description: 'Deca Mix 4 esterli Bir deca türevidir.Decadan kısaca bahsedecek olursak bulk amaçlı kullanılan en etkili maddedir.Definasyon döneminde kullanılması uygun olmaz.Bu sebebi Deca Vücuda kas kazanımı yaparken yanında tutacağı su kütlesinden dolayı hatlı görünümü engeller.Deca 19-a Grubu dahildir 17 grubuna göre çok daha yüksek anabolik güce sahiptir.Resöptörlere çok güçlü bağlanır yanında başka bir 19-a(örn trnbolone) grubu kullanıldığında resöptörü kapattığı için 2.19-a grubu maddemiz tam randımanlı çalışmayacağından dolayı başka bir anabolizon eklecekse 17 grubundan(örn:boldenon,primobolon) ekleme yapılmalıdır.', trademark: 'İron pharma', price: 180, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP1.png")
-# Product.create title: 'Iron Pharma Deca 200 mg', description: 'DOZAJ FORMU
+Product.create title: 'Iron Pharma Deca MİX 400 mg', description: 'Deca Mix 4 esterli Bir deca türevidir.Decadan kısaca bahsedecek olursak bulk amaçlı kullanılan en etkili maddedir.Definasyon döneminde kullanılması uygun olmaz.Bu sebebi Deca Vücuda kas kazanımı yaparken yanında tutacağı su kütlesinden dolayı hatlı görünümü engeller.Deca 19-a Grubu dahildir 17 grubuna göre çok daha yüksek anabolik güce sahiptir.Resöptörlere çok güçlü bağlanır yanında başka bir 19-a(örn trnbolone) grubu kullanıldığında resöptörü kapattığı için 2.19-a grubu maddemiz tam randımanlı çalışmayacağından dolayı başka bir anabolizon eklecekse 17 grubundan(örn:boldenon,primobolon) ekleme yapılmalıdır.', trademark: 'İron pharma', price: 180, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP1.png")
+Product.create title: 'Iron Pharma Deca 200 mg', description: 'DOZAJ FORMU
 
-# 250 mg / ml
-# ENDİKASYONLARI
+250 mg / ml
+ENDİKASYONLARI
 
-# İyi etki, kas büyümesi, iştah uyarıları ve artmış kırmızı kan hücresi üretimi ve kemik yoğunluğunu içerir. Klinik çalışmalar, anemi, osteoporoz ve göğüs kanseri dahil olmak üzere bazı neoplazi formlarının tedavisinde etkili olduğunu ve aynı zamanda bir progestin esaslı kontraseptif olarak hizmet ettiğini göstermiştir. Bu nedenlerle, Birleşik Devletler’deki Nandrolone 1983’te FDA onayı aldı.
-# YAN ETKİLER
+İyi etki, kas büyümesi, iştah uyarıları ve artmış kırmızı kan hücresi üretimi ve kemik yoğunluğunu içerir. Klinik çalışmalar, anemi, osteoporoz ve göğüs kanseri dahil olmak üzere bazı neoplazi formlarının tedavisinde etkili olduğunu ve aynı zamanda bir progestin esaslı kontraseptif olarak hizmet ettiğini göstermiştir. Bu nedenlerle, Birleşik Devletler’deki Nandrolone 1983’te FDA onayı aldı.
+YAN ETKİLER
 
-# Nandrolone DHT’ye ayrılmadığından, baş, cilt ve prostat derisinde bulunan anabolik steroidlerin birçoğu için zararlı etkileri bir miktar azaltılır; ancak zayıf androjenler dihidronandrolon ayrılır. 17a-karbamilin alkilasyon eksikliği ilacın karaciğer toksisitesini önemli ölçüde azaltır. Aromataz reaksiyonunun östrojenik etkileri ilacın bir progestin olmasının bir sonucu olarak hafifletilir ancak jinekomasti ve düşük libido gibi efektler halen daha büyük dozlarda ortaya çıkmaktadır. Diğer yan etkiler, erektil disfonksiyon ve kardiyovasküler hasarın yanısıra ilacın negatif geribildirim yoluyla lüteinizan hormon seviyelerinin düşürülmesinden kaynaklanan bazı bozuklukları da içerebilir.
-# ETKİN DOZ
+Nandrolone DHT’ye ayrılmadığından, baş, cilt ve prostat derisinde bulunan anabolik steroidlerin birçoğu için zararlı etkileri bir miktar azaltılır; ancak zayıf androjenler dihidronandrolon ayrılır. 17a-karbamilin alkilasyon eksikliği ilacın karaciğer toksisitesini önemli ölçüde azaltır. Aromataz reaksiyonunun östrojenik etkileri ilacın bir progestin olmasının bir sonucu olarak hafifletilir ancak jinekomasti ve düşük libido gibi efektler halen daha büyük dozlarda ortaya çıkmaktadır. Diğer yan etkiler, erektil disfonksiyon ve kardiyovasküler hasarın yanısıra ilacın negatif geribildirim yoluyla lüteinizan hormon seviyelerinin düşürülmesinden kaynaklanan bazı bozuklukları da içerebilir.
+ETKİN DOZ
 
-# 200-1000 mg / hafta', trademark: 'İron pharma', price: 150, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP2.png")
-# Product.create title: 'Iron Pharma Boldenon 400 mg', description: 'Boldenon kaliteli kas kütlesi kazandıran ve iştah açan bir ilaçtır. Hem bulk hemde diyet dönemlerinde kullanılabilir fakat boldenonun kullanım süresi çok önemlidir. 4. haftadan itibaren etkiler görülmeye başlanır, somut bir sonuç alabilmek için en az 6 hafta kullanmak gerekir. 12 haftadan sonraki kullanımlarda boldenon ile devasa kaslara sahip olabilirsiniz.
+200-1000 mg / hafta', trademark: 'İron pharma', price: 150, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP2.png")
+Product.create title: 'Iron Pharma Boldenon 400 mg', description: 'Boldenon kaliteli kas kütlesi kazandıran ve iştah açan bir ilaçtır. Hem bulk hemde diyet dönemlerinde kullanılabilir fakat boldenonun kullanım süresi çok önemlidir. 4. haftadan itibaren etkiler görülmeye başlanır, somut bir sonuç alabilmek için en az 6 hafta kullanmak gerekir. 12 haftadan sonraki kullanımlarda boldenon ile devasa kaslara sahip olabilirsiniz.
 
-# Boldenon Kullanımı ve Dozaj;
+Boldenon Kullanımı ve Dozaj;
 
-# Boldenon diğer adıyla equipoise vücut geliştirmeciler ve atlet`ler tarafından dayanıklılığı artırmak, kas kütlesini artırmak ve kırmızı kan hücrelerini artırmak için kullanılır. Boldenon ile ilgili bilmeniz gereken tek şey yavaş ama kaliteli kas kütlesi kazandırmasıdır.
+Boldenon diğer adıyla equipoise vücut geliştirmeciler ve atlet`ler tarafından dayanıklılığı artırmak, kas kütlesini artırmak ve kırmızı kan hücrelerini artırmak için kullanılır. Boldenon ile ilgili bilmeniz gereken tek şey yavaş ama kaliteli kas kütlesi kazandırmasıdır.
 
-# Son yıllarda powerlifter`lar ve vücut geliştirmeciler deca durabolin yerine en ideal steroid olarak boldenonu tercih etmeye başlamışlardır. Bunun nedeni boldenon ile çok daha az yan etki ile çok daha kaliteli kas ve güç kazanımıdır. Ayrıca boldenon vücutda kan akışını kolaylaştırıp kaslara daha fazla kan gitmesini sağlar, kısaca kırmızı kan hücrelerini artırır.
+Son yıllarda powerlifter`lar ve vücut geliştirmeciler deca durabolin yerine en ideal steroid olarak boldenonu tercih etmeye başlamışlardır. Bunun nedeni boldenon ile çok daha az yan etki ile çok daha kaliteli kas ve güç kazanımıdır. Ayrıca boldenon vücutda kan akışını kolaylaştırıp kaslara daha fazla kan gitmesini sağlar, kısaca kırmızı kan hücrelerini artırır.
 
-# Erkekler için; 400-600mg haftalık dozaj yeterlidir.
+Erkekler için; 400-600mg haftalık dozaj yeterlidir.
 
-# Bayanlar için; 50-100mg haftalık dozaj yeterlidir.', trademark: 'İron pharma', price: 180, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP3.png")
-# Product.create title: 'Iron Pharma Tren Mix 150 mg', description: '    Trenbolone Acetate………………………75mg
-# Trenbolone Hexahydrobenzylcarb……..75mg
-# Trenbolone enanthate…………………….100mg
+Bayanlar için; 50-100mg haftalık dozaj yeterlidir.', trademark: 'İron pharma', price: 180, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP3.png")
+Product.create title: 'Iron Pharma Tren Mix 150 mg', description: '    Trenbolone Acetate………………………75mg
+Trenbolone Hexahydrobenzylcarb……..75mg
+Trenbolone enanthate…………………….100mg
 
-# Trenmix yüksek anabolik değere sahiptir. Sporcular tarafından genelde kaliteli saf kas yağ yakımı amacıyla kullanılır aynı şekilde diyet yapmadan yağ yakımı sağlamaktadır. Kaliteli beslenme ile çok hızlı şekilde kas kütlesi artışı sağlamaktadır. Trenmix kullanımı maximum 10 hafta önerilir, 10 haftayı geçen kürlerde karaciğer ve böbrek yorgunluğu yaşanır. Trenmix hem uzun ester hem kısa ester trenbolone barındırmaktadır bu yüzden 3 günde 1 enjeksiyon önerilir. Trenmix kullanırken bol su tüketmeniz gerekmektedir.
-# Kullanımı ve Dozajlama
+Trenmix yüksek anabolik değere sahiptir. Sporcular tarafından genelde kaliteli saf kas yağ yakımı amacıyla kullanılır aynı şekilde diyet yapmadan yağ yakımı sağlamaktadır. Kaliteli beslenme ile çok hızlı şekilde kas kütlesi artışı sağlamaktadır. Trenmix kullanımı maximum 10 hafta önerilir, 10 haftayı geçen kürlerde karaciğer ve böbrek yorgunluğu yaşanır. Trenmix hem uzun ester hem kısa ester trenbolone barındırmaktadır bu yüzden 3 günde 1 enjeksiyon önerilir. Trenmix kullanırken bol su tüketmeniz gerekmektedir.
+Kullanımı ve Dozajlama
 
-# Yeni başlayan sporcular için haftalık 150mg – 300mg arası kullanımı önerilir.
-# İleri seviye sporcular için haftalık 300mg – 600mg arası kullanımı önerilir.
-# Yan Etkiler
+Yeni başlayan sporcular için haftalık 150mg – 300mg arası kullanımı önerilir.
+İleri seviye sporcular için haftalık 300mg – 600mg arası kullanımı önerilir.
+Yan Etkiler
 
-# – Akne.
-# – Öksürük.
-# – Uyku sorunu.
-# – Yorgunluk Hissi.
-# – Terleme.', trademark: 'İron pharma', price: 200, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP4.png")
-# Product.create title: 'Iron Pharma Tren Enantat', description: 'DOZAJ FORMU
+– Akne.
+– Öksürük.
+– Uyku sorunu.
+– Yorgunluk Hissi.
+– Terleme.', trademark: 'İron pharma', price: 200, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP4.png")
+Product.create title: 'Iron Pharma Tren Enantat', description: 'DOZAJ FORMU
 
-# 200 mg / ml
-# ENDİKASYONLARI
+200 mg / ml
+ENDİKASYONLARI
 
-# Trenbolone Enanthate, kas büyümesini ve iştahı artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon asetat olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
-# YAN ETKİLER
+Trenbolone Enanthate, kas büyümesini ve iştahı artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon asetat olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
+YAN ETKİLER
 
-# Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
-# ETKİN DOZ
+Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
+ETKİN DOZ
 
-# Haftada 300-600 mg.', trademark: 'İron pharma', price: 180, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP5.png")
-# Product.create title: 'Iron Pharma Tren Acetat 100 mg', description: 'ENDİKASYONLARI
+Haftada 300-600 mg.', trademark: 'İron pharma', price: 180, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP5.png")
+Product.create title: 'Iron Pharma Tren Acetat 100 mg', description: 'ENDİKASYONLARI
 
-# Trenbolone acetate, kas büyüme ve iştahsını artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan bir anabolik steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon acetate olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
-# YAN ETKİLER
+Trenbolone acetate, kas büyüme ve iştahsını artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan bir anabolik steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon acetate olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
+YAN ETKİLER
 
-# Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
-# ETKİN DOZ
+Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
+ETKİN DOZ
 
-# 75-150 mg / 2 gün', trademark: 'İron pharma', price: 165, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP6.png")
-# Product.create title: 'Iron Pharma Testo Propinat 100 mg', description: 'DOZAJ FORMU
+75-150 mg / 2 gün', trademark: 'İron pharma', price: 165, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP6.png")
+Product.create title: 'Iron Pharma Testo Propinat 100 mg', description: 'DOZAJ FORMU
 
-# 100 mg / ml
-# ENDİKASYONLARI
+100 mg / ml
+ENDİKASYONLARI
 
-# Testosteron, androjen grubundan alınan bir steroid hormondur. Memelilerde, testosteron öncelikle erkeklerin testislerinde ve dişilerin yumurtalarında salgılanır, ancak küçük miktarlar da adrenal bezler tarafından salgılanır. Başlıca erkek cinsel hormonu ve bir anabolik steroiddir. Hem erkeklerde hem de kadınlarda testosteron, sağlıkta ve refahta olduğu kadar cinsel işlevlerde de önemli bir rol oynamaktadır. Örnekler arasında libido artışı, artan enerji, kırmızı kan hücrelerinin artan üretimi ve osteoporoza karşı koruma bulunmaktadır. Ortalama olarak yetişkin bir insan vücudu yetişkin bir kadın vücudundan yaklaşık 40-60 kat daha fazla testosteron üretir, ancak kadınlar hormona daha duyarlıdır.
-# YAN ETKİLER
+Testosteron, androjen grubundan alınan bir steroid hormondur. Memelilerde, testosteron öncelikle erkeklerin testislerinde ve dişilerin yumurtalarında salgılanır, ancak küçük miktarlar da adrenal bezler tarafından salgılanır. Başlıca erkek cinsel hormonu ve bir anabolik steroiddir. Hem erkeklerde hem de kadınlarda testosteron, sağlıkta ve refahta olduğu kadar cinsel işlevlerde de önemli bir rol oynamaktadır. Örnekler arasında libido artışı, artan enerji, kırmızı kan hücrelerinin artan üretimi ve osteoporoza karşı koruma bulunmaktadır. Ortalama olarak yetişkin bir insan vücudu yetişkin bir kadın vücudundan yaklaşık 40-60 kat daha fazla testosteron üretir, ancak kadınlar hormona daha duyarlıdır.
+YAN ETKİLER
 
-# Bununla birlikte, her hormondaki gibi, testosteron veya diğer anabolik steroidler yıllar geçtikçe değişime bağlı olarak başka koşullar ve amaçlar için de verilmiş ancak değişken başarı ancak daha yüksek yan etki oranları veya problemler oranı vardır. İnfertilite, libido veya erektil disfonksiyondan yoksunluk, osteoporoz, penil genişleme, boy büyümesi, kemik iliği stimülasyonu ve anemi geri dönüşümü ve iştah uyarıları dahildir. 1940’ların sonlarına gelindiğinde, testosteron, anti-aging harikulade bir merak uyuşturucu olarak lanse edildi (örn., Paul de Kruif’in Erkek Hormonuna bakınız). Testosteron üretiminin yaşla birlikte azalması, Androjen Replasman Tedavisine yönelik bir talebi doğurmuştur.
-# ETKİN DOZ
+Bununla birlikte, her hormondaki gibi, testosteron veya diğer anabolik steroidler yıllar geçtikçe değişime bağlı olarak başka koşullar ve amaçlar için de verilmiş ancak değişken başarı ancak daha yüksek yan etki oranları veya problemler oranı vardır. İnfertilite, libido veya erektil disfonksiyondan yoksunluk, osteoporoz, penil genişleme, boy büyümesi, kemik iliği stimülasyonu ve anemi geri dönüşümü ve iştah uyarıları dahildir. 1940’ların sonlarına gelindiğinde, testosteron, anti-aging harikulade bir merak uyuşturucu olarak lanse edildi (örn., Paul de Kruif’in Erkek Hormonuna bakınız). Testosteron üretiminin yaşla birlikte azalması, Androjen Replasman Tedavisine yönelik bir talebi doğurmuştur.
+ETKİN DOZ
 
-# 50-100 mg / 2 gün', trademark: 'İron pharma', price: 115, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP7.png")
-# Product.create title: 'Iron Pharma Testo Cypionat 200 mg', description: 'Dozaj formu
+50-100 mg / 2 gün', trademark: 'İron pharma', price: 115, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP7.png")
+Product.create title: 'Iron Pharma Testo Cypionat 200 mg', description: 'Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Enantasyondan biraz daha “kick” sağlayan üstün bir ürün olması için testosteron cypionate. Aynı zamanda, biraz daha yüksek bir su tutma seviyesi ürettiği söylenir, ancak kolayca anlaşılması için yeterli değildir. Tabii ki duruma objektif baktığımızda, bu iki steroidin gerçekten değiştirilebilir olduğunu ve cypionate’in hiç de üstün olmadığını görüyoruz. Her ikisi de uzun etkili yağ bazlı enjektabllardır ve bu testosteron seviyelerini yaklaşık iki hafta boyunca yeterince yükseltilmiş tutacaktır. Enantant testosteron salınımı açısından biraz daha iyi olabilir, çünkü bu ester cypionate’den bir karbon atomudur. Fakat fark çok önemsizdir, ancak hiç kimse haklı olarak farkedilebileceğini iddia edemez. Her ne olursa olsun, cypionate ABD karaborsasında çok yüksek bir süredir testosteron esteri olarak yerini aldı.
-# Yan etkiler
+Enantasyondan biraz daha “kick” sağlayan üstün bir ürün olması için testosteron cypionate. Aynı zamanda, biraz daha yüksek bir su tutma seviyesi ürettiği söylenir, ancak kolayca anlaşılması için yeterli değildir. Tabii ki duruma objektif baktığımızda, bu iki steroidin gerçekten değiştirilebilir olduğunu ve cypionate’in hiç de üstün olmadığını görüyoruz. Her ikisi de uzun etkili yağ bazlı enjektabllardır ve bu testosteron seviyelerini yaklaşık iki hafta boyunca yeterince yükseltilmiş tutacaktır. Enantant testosteron salınımı açısından biraz daha iyi olabilir, çünkü bu ester cypionate’den bir karbon atomudur. Fakat fark çok önemsizdir, ancak hiç kimse haklı olarak farkedilebileceğini iddia edemez. Her ne olursa olsun, cypionate ABD karaborsasında çok yüksek bir süredir testosteron esteri olarak yerini aldı.
+Yan etkiler
 
-# Testosteron birincil erkek androjen olduğundan, bu ilacı kullanarak belirgin androjenik yan etkiler beklemeliyiz. Çok yoğunluk, vücudun testosteronu DHT’ye dönüştürme oranı ile ilgilidir. Bildiğiniz gibi, bu, testosteron kullanımıyla ilişkili yüksek androjenik yan etkilerden sorumlu olan dolambaçlı metabolittir. Bu, yağlı cilt, akne, vücut / yüz tüyü büyüme ve erkek desen baldırı gelişimini içerir. Erkek kalıplarının kelliklerine karşı genetik bir yatkınlığa sahip olabileceğinden endişe edenler, testosterondan tamamen kaçınmak isteyebilir. Diğerleri testosteronun dihidrotestosterona dönüştürülmesini önleyen yardımcı ilaç olan Proscar / Propecia eklemeyi tercih ediyor. Bu, bir saç dökülmesi problemine girme şansınızı büyük ölçüde azaltabilir ve muhtemelen diğer androjenik yan etkilerin yoğunluğunu düşürecektir. Vücutta daha uzun süre etkin olmakla birlikte, karpuz kan seviyelerini korumak için cypionate haftada bir veya iki haftada bir kez enjekte edilir.
-# Etkin Doz
+Testosteron birincil erkek androjen olduğundan, bu ilacı kullanarak belirgin androjenik yan etkiler beklemeliyiz. Çok yoğunluk, vücudun testosteronu DHT’ye dönüştürme oranı ile ilgilidir. Bildiğiniz gibi, bu, testosteron kullanımıyla ilişkili yüksek androjenik yan etkilerden sorumlu olan dolambaçlı metabolittir. Bu, yağlı cilt, akne, vücut / yüz tüyü büyüme ve erkek desen baldırı gelişimini içerir. Erkek kalıplarının kelliklerine karşı genetik bir yatkınlığa sahip olabileceğinden endişe edenler, testosterondan tamamen kaçınmak isteyebilir. Diğerleri testosteronun dihidrotestosterona dönüştürülmesini önleyen yardımcı ilaç olan Proscar / Propecia eklemeyi tercih ediyor. Bu, bir saç dökülmesi problemine girme şansınızı büyük ölçüde azaltabilir ve muhtemelen diğer androjenik yan etkilerin yoğunluğunu düşürecektir. Vücutta daha uzun süre etkin olmakla birlikte, karpuz kan seviyelerini korumak için cypionate haftada bir veya iki haftada bir kez enjekte edilir.
+Etkin Doz
 
-# 200mg – 2000 mg / hafta', trademark: 'İron pharma', price: 130, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP8.png")
-# Product.create title: 'Iron Pharma Masteron 100 mg', description: 'ENDİKASYONLARI
+200mg – 2000 mg / hafta', trademark: 'İron pharma', price: 130, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP8.png")
+Product.create title: 'Iron Pharma Masteron 100 mg', description: 'ENDİKASYONLARI
 
-# Drostanolone Propionate bir anabolik androjenik steroiddir. Oldukça androjenik ve hafif anabolik olduğu bilinmektedir. Aromatik değildir ve dihidrotestosterona benzer özelliklere sahiptir. Meme kanseri bir hasta olarak başarıyla kullanılmıştır, ancak yüksek viril riski nedeniyle daha güvenli seçenekler sunmaktadır. Masteron kilo alımı için klinik olarak kullanılmıyor (çoğu steroid ile olduğu gibi), bu açıdan çok benzersiz bir steroid yapıyor. Ne yazık ki, Masteron’un tıbbi dergilerindeki bilgilerin birçoğu, bu nedenlerden dolayı kilo verme, güç kazanım ve hatta yağ kaybına odaklanmamaktadır.
-# YAN ETKİLER
+Drostanolone Propionate bir anabolik androjenik steroiddir. Oldukça androjenik ve hafif anabolik olduğu bilinmektedir. Aromatik değildir ve dihidrotestosterona benzer özelliklere sahiptir. Meme kanseri bir hasta olarak başarıyla kullanılmıştır, ancak yüksek viril riski nedeniyle daha güvenli seçenekler sunmaktadır. Masteron kilo alımı için klinik olarak kullanılmıyor (çoğu steroid ile olduğu gibi), bu açıdan çok benzersiz bir steroid yapıyor. Ne yazık ki, Masteron’un tıbbi dergilerindeki bilgilerin birçoğu, bu nedenlerden dolayı kilo verme, güç kazanım ve hatta yağ kaybına odaklanmamaktadır.
+YAN ETKİLER
 
-# Genellikle steroidlere uygundur. Daha önce de tartışıldığı üzere, jinekomasti, su tutma ve yüksek tansiyon problem değildir. Masteron aynı zamanda karaciğere zehirli değildir, bu nedenle uzun döngülerle bile bu organ stres için çok az endişe kaynağı olacaktır. Tek gerçek yan etki dihidrotestosteronun temel androjenik özelliklerinden biridir. Bunlara yağlı cilt, akne, vücut / yüz tüyü büyümesi, agresyon ve hızlanan saç dökülmesi dahildir. Bu bileşik zaten bir sentetik DHT olduğundan, Proscar androjenik etkilerin seviyesinde herhangi bir etki yoktur. Bu steroidin güçlü androjenik etkisi bu durumu kolayca hızlandırabilir; saç çizgisini kaynatan veya kellik yapmak eğilimli olan erkekler Masteron’dan tamamen uzak kalmak isteyebilir.
-# ETKİN DOZ
+Genellikle steroidlere uygundur. Daha önce de tartışıldığı üzere, jinekomasti, su tutma ve yüksek tansiyon problem değildir. Masteron aynı zamanda karaciğere zehirli değildir, bu nedenle uzun döngülerle bile bu organ stres için çok az endişe kaynağı olacaktır. Tek gerçek yan etki dihidrotestosteronun temel androjenik özelliklerinden biridir. Bunlara yağlı cilt, akne, vücut / yüz tüyü büyümesi, agresyon ve hızlanan saç dökülmesi dahildir. Bu bileşik zaten bir sentetik DHT olduğundan, Proscar androjenik etkilerin seviyesinde herhangi bir etki yoktur. Bu steroidin güçlü androjenik etkisi bu durumu kolayca hızlandırabilir; saç çizgisini kaynatan veya kellik yapmak eğilimli olan erkekler Masteron’dan tamamen uzak kalmak isteyebilir.
+ETKİN DOZ
 
-# 100 mg / 2 gün', trademark: 'İron pharma', price: 145, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP9.png")
-# Product.create title: 'Iron Pharma Boldenon 200 mg', description: 'Boldenon kaliteli kas kütlesi kazandıran ve iştah açan bir ilaçtır. Hem bulk hemde diyet dönemlerinde kullanılabilir fakat boldenonun kullanım süresi çok önemlidir. 4. haftadan itibaren etkiler görülmeye başlanır, somut bir sonuç alabilmek için en az 6 hafta kullanmak gerekir. 12 haftadan sonraki kullanımlarda boldenon ile devasa kaslara sahip olabilirsiniz.
+100 mg / 2 gün', trademark: 'İron pharma', price: 145, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP9.png")
+Product.create title: 'Iron Pharma Boldenon 200 mg', description: 'Boldenon kaliteli kas kütlesi kazandıran ve iştah açan bir ilaçtır. Hem bulk hemde diyet dönemlerinde kullanılabilir fakat boldenonun kullanım süresi çok önemlidir. 4. haftadan itibaren etkiler görülmeye başlanır, somut bir sonuç alabilmek için en az 6 hafta kullanmak gerekir. 12 haftadan sonraki kullanımlarda boldenon ile devasa kaslara sahip olabilirsiniz.
 
-# Boldenon Kullanımı ve Dozaj;
+Boldenon Kullanımı ve Dozaj;
 
-# Boldenon diğer adıyla equipoise vücut geliştirmeciler ve atletler tarafından dayanıklılığı artırmak, kas kütlesini artırmak ve kırmızı kan hücrelerini artırmak için kullanılır. Boldenon ile ilgili bilmeniz gereken tek şey yavaş ama kaliteli kas kütlesi kazandırmasıdır.
+Boldenon diğer adıyla equipoise vücut geliştirmeciler ve atletler tarafından dayanıklılığı artırmak, kas kütlesini artırmak ve kırmızı kan hücrelerini artırmak için kullanılır. Boldenon ile ilgili bilmeniz gereken tek şey yavaş ama kaliteli kas kütlesi kazandırmasıdır.
 
-# Son yıllarda powerlifterlar ve vücut geliştirmeciler deca durabolin yerine en ideal steroid olarak boldenonu tercih etmeye başlamışlardır. Bunun nedeni boldenon ile çok daha az yan etki ile çok daha kaliteli kas ve güç kazanımıdır. Ayrıca boldenon vücutda kan akışını kolaylaştırıp kaslara daha fazla kan gitmesini sağlar, kısaca kırmızı kan hücrelerini artırır.
+Son yıllarda powerlifterlar ve vücut geliştirmeciler deca durabolin yerine en ideal steroid olarak boldenonu tercih etmeye başlamışlardır. Bunun nedeni boldenon ile çok daha az yan etki ile çok daha kaliteli kas ve güç kazanımıdır. Ayrıca boldenon vücutda kan akışını kolaylaştırıp kaslara daha fazla kan gitmesini sağlar, kısaca kırmızı kan hücrelerini artırır.
 
-# Erkekler için; 400-600mg haftalık dozaj yeterlidir.
+Erkekler için; 400-600mg haftalık dozaj yeterlidir.
 
-# Bayanlar için; 50-100mg haftalık dozaj yeterlidir.', trademark: 'İron pharma', price: 145, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP10.png")
-# Product.create title: 'Iron Pharma Testesteron Mix', description: '    Trenbolone Acetate……………………………50mg
-# Trenbolone Hexahydrobenzylcarb……..50mg
-# Trenbolone enanthate………………………..50mg
+Bayanlar için; 50-100mg haftalık dozaj yeterlidir.', trademark: 'İron pharma', price: 145, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP10.png")
+Product.create title: 'Iron Pharma Testesteron Mix', description: '    Trenbolone Acetate……………………………50mg
+Trenbolone Hexahydrobenzylcarb……..50mg
+Trenbolone enanthate………………………..50mg
 
-# Trenmix yüksek anabolik değere sahiptir. Sporcular tarafından genelde kaliteli saf kas yağ yakımı amacıyla kullanılır aynı şekilde diyet yapmadan yağ yakımı sağlamaktadır. Kaliteli beslenme ile çok hızlı şekilde kas kütlesi artışı sağlamaktadır. Trenmix kullanımı maximum 10 hafta önerilir, 10 haftayı geçen kürlerde karaciğer ve böbrek yorgunluğu yaşanır. Trenmix hem uzun ester hem kısa ester trenbolone barındırmaktadır bu yüzden 3 günde 1 enjeksiyon önerilir. Trenmix kullanırken bol su tüketmeniz gerekmektedir.
-# Kullanımı ve Dozajlama
+Trenmix yüksek anabolik değere sahiptir. Sporcular tarafından genelde kaliteli saf kas yağ yakımı amacıyla kullanılır aynı şekilde diyet yapmadan yağ yakımı sağlamaktadır. Kaliteli beslenme ile çok hızlı şekilde kas kütlesi artışı sağlamaktadır. Trenmix kullanımı maximum 10 hafta önerilir, 10 haftayı geçen kürlerde karaciğer ve böbrek yorgunluğu yaşanır. Trenmix hem uzun ester hem kısa ester trenbolone barındırmaktadır bu yüzden 3 günde 1 enjeksiyon önerilir. Trenmix kullanırken bol su tüketmeniz gerekmektedir.
+Kullanımı ve Dozajlama
 
-# Yeni başlayan sporcular için haftalık 150mg – 300mg arası kullanımı önerilir.
-# İleri seviye sporcular için haftalık 300mg – 600mg arası kullanımı önerilir.
-# Yan Etkiler
+Yeni başlayan sporcular için haftalık 150mg – 300mg arası kullanımı önerilir.
+İleri seviye sporcular için haftalık 300mg – 600mg arası kullanımı önerilir.
+Yan Etkiler
 
-# – Akne.
-# – Öksürük.
-# – Uyku sorunu.
-# – Yorgunluk Hissi.
-# – Terleme.', trademark: 'İron pharma', price: 150, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP11.png")
-# Product.create title: 'Iron Pharma Testesteron Enantat', description: 'DOZAJ FORMU
+– Akne.
+– Öksürük.
+– Uyku sorunu.
+– Yorgunluk Hissi.
+– Terleme.', trademark: 'İron pharma', price: 150, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP11.png")
+Product.create title: 'Iron Pharma Testesteron Enantat', description: 'DOZAJ FORMU
 
-# 250 mg / ml
-# ENDİKASYONLARI
+250 mg / ml
+ENDİKASYONLARI
 
-# Kas içine enjekte edilen yağdaki testosteron Enanthate lipid fazından yavaşça absorbe edilir; Bu nedenle Testosteron Enanthate iki ila dört hafta aralıklarla verilebilir. Plazmada testosteron, yüzde 98, özgül bir testosteron-östradiol bağlayıcı globuline bağlıdır ve yaklaşık iki yüzde serbesttir. Genel olarak, plazmada bu SHBG miktarı testosteronun serbest ve bağlı formlar arasındaki dağılımını belirleyecek ve serbest testosteron konsantrasyonu yarı ömrünü belirleyecektir. Testosteron dozunun yaklaşık yüzde 90’ı testosteron glukuronik ve sülfürik asit konjugatları ve metabolitleri olarak idrarla atılır; Bir dozun yaklaşık% 6’sı dışkılarda, çoğunlukla konjuge edilmemiş formda atılır. Testosteronun inaktivasyonu öncelikli olarak karaciğerde gerçekleşir. Testosteron iki farklı yol ile çeşitli 17-keto steroidlere metabolize olur. Literatürde bildirilen testosteronun yarılanma ömründe önemli değişiklikler vardır, bunlar 10 ila 100 dakika arasında değişir. Postmenopozal dönemden bir ila beş yıl önce ilerlemiş, inoperable metastatik (iskelet) meme kanseri olan kadınlar. Bu kadınların tedavisinde birincil amaçlar yumurtalıkların ablasyonudur. Bunları alan kadınlar meme kanseri geliştirme riskleridir.
-# YAN ETKİLER
+Kas içine enjekte edilen yağdaki testosteron Enanthate lipid fazından yavaşça absorbe edilir; Bu nedenle Testosteron Enanthate iki ila dört hafta aralıklarla verilebilir. Plazmada testosteron, yüzde 98, özgül bir testosteron-östradiol bağlayıcı globuline bağlıdır ve yaklaşık iki yüzde serbesttir. Genel olarak, plazmada bu SHBG miktarı testosteronun serbest ve bağlı formlar arasındaki dağılımını belirleyecek ve serbest testosteron konsantrasyonu yarı ömrünü belirleyecektir. Testosteron dozunun yaklaşık yüzde 90’ı testosteron glukuronik ve sülfürik asit konjugatları ve metabolitleri olarak idrarla atılır; Bir dozun yaklaşık% 6’sı dışkılarda, çoğunlukla konjuge edilmemiş formda atılır. Testosteronun inaktivasyonu öncelikli olarak karaciğerde gerçekleşir. Testosteron iki farklı yol ile çeşitli 17-keto steroidlere metabolize olur. Literatürde bildirilen testosteronun yarılanma ömründe önemli değişiklikler vardır, bunlar 10 ila 100 dakika arasında değişir. Postmenopozal dönemden bir ila beş yıl önce ilerlemiş, inoperable metastatik (iskelet) meme kanseri olan kadınlar. Bu kadınların tedavisinde birincil amaçlar yumurtalıkların ablasyonudur. Bunları alan kadınlar meme kanseri geliştirme riskleridir.
+YAN ETKİLER
 
-# Jinekomasti dahil olmak üzere çeşitli yan etkiler vardır, su tutma özelliğinden dolayı hipertansiyon ortaya çıkabilir, sürekli kullanım, kusma, bulantı, ereksiyonun uzaması, ekstremitelerin şişmesi, gözlerde sarılık görülmesi ile yorgunluk oluşabilir.
-# ETKİN DOZ
+Jinekomasti dahil olmak üzere çeşitli yan etkiler vardır, su tutma özelliğinden dolayı hipertansiyon ortaya çıkabilir, sürekli kullanım, kusma, bulantı, ereksiyonun uzaması, ekstremitelerin şişmesi, gözlerde sarılık görülmesi ile yorgunluk oluşabilir.
+ETKİN DOZ
 
-# 250 – 1250 mg / hafta', trademark: 'İron pharma', price: 130, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP12.png")
-# Product.create title: 'Iron Pharma Testesteron Sustanon', description: 'Açıklama
+250 – 1250 mg / hafta', trademark: 'İron pharma', price: 130, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP12.png")
+Product.create title: 'Iron Pharma Testesteron Sustanon', description: 'Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Açıklama
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Yan etkiler
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Yan etkiler
 
-# Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
-# Etkin Doz
+Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
+Etkin Doz
 
-# 250-1000 mg / hafta.
-# Açıklama
+250-1000 mg / hafta.
+Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Açıklama
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Yan etkiler
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Yan etkiler
 
-# Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
-# Etkin Doz
+Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
+Etkin Doz
 
-# 250-1000 mg / hafta.
+250-1000 mg / hafta.
 
-# Açıklama
+Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Yan etkiler
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Yan etkiler
 
-# Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
-# Etkin Doz
+Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
+Etkin Doz
 
-# 250-1000 mg / hafta.
+250-1000 mg / hafta.
 
-# Açıklama
+Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Yan etkiler
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Yan etkiler
 
-# Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
-# Etkin Doz
+Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
+Etkin Doz
 
-# 250-1000 mg / hafta.
+250-1000 mg / hafta.
 
-# Açıklama
+Açıklama
 
-# Testosterone Propionate…………….30mg/ml
-# Testosterone Phenyl Propionate…..60mg/ml
-# Testosterone isocorporate………….60mg/ml
-# Testosterone Decanoate……………100mg/ml.
+Testosterone Propionate…………….30mg/ml
+Testosterone Phenyl Propionate…..60mg/ml
+Testosterone isocorporate………….60mg/ml
+Testosterone Decanoate……………100mg/ml.
 
-# Dozaj formu
+Dozaj formu
 
-# 250 mg / ml
-# Endikasyonları
+250 mg / ml
+Endikasyonları
 
-# Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
-# Yan etkiler
+Sustanon, sporcular için özel olarak tasarlanmış testosteronun farklı esterlerinin bir kombinasyonudur. Sporcuların ve vücut geliştiricileri için en önemli yararı, ayda sadece bir kez enjekte edilmesi, bu nedenle ayda bir kez doktor ziyaret etmesi ve bunun yanında diğer steroidlerin de kullanılabilmesidir. Kas büyümesine ve yağ kaybına neden olur. Dolayısıyla bu steroid anabolik ve güçlü kataboliktir. Aynı zamanda eritropoezi artırma ve kas oksijen alımını artırma kapasitesine sahiptir. Yüksek oksijen kası alımı nedeniyle, yorucu egzersiz bile kolaylıkla halledilebilir. Agresifliği nöromüsküler bulaş yoluyla artırabilir. Bu ilacı kullanarak kilo verme dikkat çekicidir. Atletler tarafından kas sayı ve görünümünü arttırmak için kullanılır. Anabolik ve katabolik aktiviteleri nedeniyle spor adamları arasında vücuttan yağ kaybetmek çok popülerdir. Aslında kas kütlesini arttırmaz, ancak kas sayılarına konsantre olur. Eritropoez önemli ölçüde artar ve bazı anemilerde kullanılır. Glikojen sentezinin gerekli olduğu koşullarda kullanılır. Vücut geliştiriciler, oyunu saldırganlığı artırmak için kullanırlar. Sporcular aşırı antrenman nedeniyle kullanıyorlar.
+Yan etkiler
 
-# Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
-# Etkin Doz
+Olası yan etkiler jinekomasti, akne, libido azalması, testislerin büzülmesi, vücudun suyunu korumak için yüksek afiniteye sahip olması nedeniyle kan basıncının artırılması, prostat boyutunun ve idrara çıkma zorluğunun artması, erkek tipi kellik, estrojenik yan nedeniyle artmaktadır. östrojen ve östrojen etkilerinin yanı sıra klitorisin genişlemesine yol açabilir.
+Etkin Doz
 
-# 250-1000 mg / hafta.
-# ', trademark: 'İron pharma', price: 170, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP13.png")
-# Product.create title: 'Generics Pharma Tren Enantat', description: 'DOZAJ FORMU
+250-1000 mg / hafta.
+', trademark: 'İron pharma', price: 170, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/IP13.png")
+Product.create title: 'Generics Pharma Tren Enantat', description: 'DOZAJ FORMU
 
-# 200 mg / ml
-# ENDİKASYONLARI
+200 mg / ml
+ENDİKASYONLARI
 
-# Trenbolone Enanthate, kas büyümesini ve iştahı artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon asetat olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
-# YAN ETKİLER
+Trenbolone Enanthate, kas büyümesini ve iştahı artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon asetat olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
+YAN ETKİLER
 
-# Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
-# ETKİN DOZ
+Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
+ETKİN DOZ
 
-# Haftada 300-600 mg.', trademark: 'Generics Pharma', price: 160, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP1.png")
-# Product.create title: 'Generics Pharma Tren Acetat ', description: 'ENDİKASYONLARI
+Haftada 300-600 mg.', trademark: 'Generics Pharma', price: 160, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP1.png")
+Product.create title: 'Generics Pharma Tren Acetat ', description: 'ENDİKASYONLARI
 
-# Trenbolone acetate, kas büyüme ve iştahsını artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan bir anabolik steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon acetate olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
-# YAN ETKİLER
+Trenbolone acetate, kas büyüme ve iştahsını artırmak için hayvanlar üzerinde veteriner hekimler tarafından kullanılan bir anabolik steroiddir. Etkin yarı ömrünü artırmak için, trenbolon rafine edilmemiş bir biçimde kullanılmaz, daha çok trenbolon acetate olarak uygulanır. Trenbolone, son derece popüler olan steroid nandrolona benzemektedir, çünkü hem 19 hem de steroidler, yani bir testosteron molekülünün 19. konumda yeni bir bileşik vermesi için değiştirilmiş demektir. Nervrolone’dan farklı olarak, trenbolon mükemmel bir kütle ve sertleşme ilacı olup, kazanımların çoğunluğu kas lifidir ve minimum su tutma özelliğine sahiptir.
+YAN ETKİLER
 
-# Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
-# ETKİN DOZ
+Trenbolonların kimyasal yapısı, aromatize enzime (östrojene dönüştürme) dirençli olmasını sağlar, böylece trenbolonun hiç bir yüzdesi östrojene dönüşmez. Trenbolon uygulaması erkeklerdeki meme dokusu büyümesi (jinekomasti, kaltak memeleri) hızlanan yağ artışını, yağ dökülmesinde düşüşü ve su tutma trenbolonunu östrojenik yan etkileri teşvik etmez. Trenbolonlar da 5- alfa-redüktaz enzimine dirençlidir, bu enzim trenbolonlarda bazı steroid hormonlarını daha androjenik bir forma indirgemektedir ancak bunun bir önemi yoktur, trenbolon 500 androjenik bir orana sahiptir, ters androjenik yan etkilere neden olabilir .
+ETKİN DOZ
 
-# 75-150 mg / 2 gün', trademark: 'Generics Pharma', price: 155, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP2.png")
-# Product.create title: 'Generics Pharma Testo Propinat ', description: 'DOZAJ FORMU
+75-150 mg / 2 gün', trademark: 'Generics Pharma', price: 155, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP2.png")
+Product.create title: 'Generics Pharma Testo Propinat ', description: 'DOZAJ FORMU
 
-# 100 mg / ml
-# ENDİKASYONLARI
+100 mg / ml
+ENDİKASYONLARI
 
-# Testosteron, androjen grubundan alınan bir steroid hormondur. Memelilerde, testosteron öncelikle erkeklerin testislerinde ve dişilerin yumurtalarında salgılanır, ancak küçük miktarlar da adrenal bezler tarafından salgılanır. Başlıca erkek cinsel hormonu ve bir anabolik steroiddir. Hem erkeklerde hem de kadınlarda testosteron, sağlıkta ve refahta olduğu kadar cinsel işlevlerde de önemli bir rol oynamaktadır. Örnekler arasında libido artışı, artan enerji, kırmızı kan hücrelerinin artan üretimi ve osteoporoza karşı koruma bulunmaktadır. Ortalama olarak yetişkin bir insan vücudu yetişkin bir kadın vücudundan yaklaşık 40-60 kat daha fazla testosteron üretir, ancak kadınlar hormona daha duyarlıdır.
-# YAN ETKİLER
+Testosteron, androjen grubundan alınan bir steroid hormondur. Memelilerde, testosteron öncelikle erkeklerin testislerinde ve dişilerin yumurtalarında salgılanır, ancak küçük miktarlar da adrenal bezler tarafından salgılanır. Başlıca erkek cinsel hormonu ve bir anabolik steroiddir. Hem erkeklerde hem de kadınlarda testosteron, sağlıkta ve refahta olduğu kadar cinsel işlevlerde de önemli bir rol oynamaktadır. Örnekler arasında libido artışı, artan enerji, kırmızı kan hücrelerinin artan üretimi ve osteoporoza karşı koruma bulunmaktadır. Ortalama olarak yetişkin bir insan vücudu yetişkin bir kadın vücudundan yaklaşık 40-60 kat daha fazla testosteron üretir, ancak kadınlar hormona daha duyarlıdır.
+YAN ETKİLER
 
-# Bununla birlikte, her hormondaki gibi, testosteron veya diğer anabolik steroidler yıllar geçtikçe değişime bağlı olarak başka koşullar ve amaçlar için de verilmiş ancak değişken başarı ancak daha yüksek yan etki oranları veya problemler oranı vardır. İnfertilite, libido veya erektil disfonksiyondan yoksunluk, osteoporoz, penil genişleme, boy büyümesi, kemik iliği stimülasyonu ve anemi geri dönüşümü ve iştah uyarıları dahildir. 1940’ların sonlarına gelindiğinde, testosteron, anti-aging harikulade bir merak uyuşturucu olarak lanse edildi (örn., Paul de Kruif’in Erkek Hormonuna bakınız). Testosteron üretiminin yaşla birlikte azalması, Androjen Replasman Tedavisine yönelik bir talebi doğurmuştur.
-# ETKİN DOZ
+Bununla birlikte, her hormondaki gibi, testosteron veya diğer anabolik steroidler yıllar geçtikçe değişime bağlı olarak başka koşullar ve amaçlar için de verilmiş ancak değişken başarı ancak daha yüksek yan etki oranları veya problemler oranı vardır. İnfertilite, libido veya erektil disfonksiyondan yoksunluk, osteoporoz, penil genişleme, boy büyümesi, kemik iliği stimülasyonu ve anemi geri dönüşümü ve iştah uyarıları dahildir. 1940’ların sonlarına gelindiğinde, testosteron, anti-aging harikulade bir merak uyuşturucu olarak lanse edildi (örn., Paul de Kruif’in Erkek Hormonuna bakınız). Testosteron üretiminin yaşla birlikte azalması, Androjen Replasman Tedavisine yönelik bir talebi doğurmuştur.
+ETKİN DOZ
 
-# 50-100 mg / 2 gün', trademark: 'Generics Pharma', price: 110, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP3.png")
-# Product.create title: 'Generics Pharma Testo Enantat ', description: 'DOZAJ FORMU
+50-100 mg / 2 gün', trademark: 'Generics Pharma', price: 110, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP3.png")
+Product.create title: 'Generics Pharma Testo Enantat ', description: 'DOZAJ FORMU
 
-# 250 mg / ml
-# ENDİKASYONLARI
+250 mg / ml
+ENDİKASYONLARI
 
-# Kas içine enjekte edilen yağdaki testosteron Enanthate lipid fazından yavaşça absorbe edilir; Bu nedenle Testosteron Enanthate iki ila dört hafta aralıklarla verilebilir. Plazmada testosteron, yüzde 98, özgül bir testosteron-östradiol bağlayıcı globuline bağlıdır ve yaklaşık iki yüzde serbesttir. Genel olarak, plazmada bu SHBG miktarı testosteronun serbest ve bağlı formlar arasındaki dağılımını belirleyecek ve serbest testosteron konsantrasyonu yarı ömrünü belirleyecektir. Testosteron dozunun yaklaşık yüzde 90’ı testosteron glukuronik ve sülfürik asit konjugatları ve metabolitleri olarak idrarla atılır; Bir dozun yaklaşık% 6’sı dışkılarda, çoğunlukla konjuge edilmemiş formda atılır. Testosteronun inaktivasyonu öncelikli olarak karaciğerde gerçekleşir. Testosteron iki farklı yol ile çeşitli 17-keto steroidlere metabolize olur. Literatürde bildirilen testosteronun yarılanma ömründe önemli değişiklikler vardır, bunlar 10 ila 100 dakika arasında değişir. Postmenopozal dönemden bir ila beş yıl önce ilerlemiş, inoperable metastatik (iskelet) meme kanseri olan kadınlar. Bu kadınların tedavisinde birincil amaçlar yumurtalıkların ablasyonudur. Bunları alan kadınlar meme kanseri geliştirme riskleridir.
-# YAN ETKİLER
+Kas içine enjekte edilen yağdaki testosteron Enanthate lipid fazından yavaşça absorbe edilir; Bu nedenle Testosteron Enanthate iki ila dört hafta aralıklarla verilebilir. Plazmada testosteron, yüzde 98, özgül bir testosteron-östradiol bağlayıcı globuline bağlıdır ve yaklaşık iki yüzde serbesttir. Genel olarak, plazmada bu SHBG miktarı testosteronun serbest ve bağlı formlar arasındaki dağılımını belirleyecek ve serbest testosteron konsantrasyonu yarı ömrünü belirleyecektir. Testosteron dozunun yaklaşık yüzde 90’ı testosteron glukuronik ve sülfürik asit konjugatları ve metabolitleri olarak idrarla atılır; Bir dozun yaklaşık% 6’sı dışkılarda, çoğunlukla konjuge edilmemiş formda atılır. Testosteronun inaktivasyonu öncelikli olarak karaciğerde gerçekleşir. Testosteron iki farklı yol ile çeşitli 17-keto steroidlere metabolize olur. Literatürde bildirilen testosteronun yarılanma ömründe önemli değişiklikler vardır, bunlar 10 ila 100 dakika arasında değişir. Postmenopozal dönemden bir ila beş yıl önce ilerlemiş, inoperable metastatik (iskelet) meme kanseri olan kadınlar. Bu kadınların tedavisinde birincil amaçlar yumurtalıkların ablasyonudur. Bunları alan kadınlar meme kanseri geliştirme riskleridir.
+YAN ETKİLER
 
-# Jinekomasti dahil olmak üzere çeşitli yan etkiler vardır, su tutma özelliğinden dolayı hipertansiyon ortaya çıkabilir, sürekli kullanım, kusma, bulantı, ereksiyonun uzaması, ekstremitelerin şişmesi, gözlerde sarılık görülmesi ile yorgunluk oluşabilir.
-# ETKİN DOZ
+Jinekomasti dahil olmak üzere çeşitli yan etkiler vardır, su tutma özelliğinden dolayı hipertansiyon ortaya çıkabilir, sürekli kullanım, kusma, bulantı, ereksiyonun uzaması, ekstremitelerin şişmesi, gözlerde sarılık görülmesi ile yorgunluk oluşabilir.
+ETKİN DOZ
 
-# 250 – 1250 mg / hafta', trademark: 'Generics Pharma', price: 110, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP4.png")
+250 – 1250 mg / hafta', trademark: 'Generics Pharma', price: 110, category: 'Enjeksiyon Steroidler', image: File.new("#{Rails.root}/app/assets/images/GP4.png")
 # Product.create title: 'Generics Pharma Testo Cypionat', description: 'Dozaj formu
 
 # 250 mg / ml
@@ -1072,18 +1072,18 @@
 # Optimum etki elde etmek için kullanıcıların minumum günlük 4 iu doz kullanması gerekir. Günlük doz birkaç kezde enjekte edilebilir. Büyüme hormonunun özellikle geceleri üretildiğini söyleyebiliriz. Akşam enjeksiyon salgılanmasını taklit etmek için akşam yemeğinden önce veya yatmadan önce, 18 saat ara ile en önemli uygulama şeklidir. Bu konuda Uygulama zamanında esneklik olabilir.', trademark: 'kigtropin', price: 250, category: 'Peptidler', image: File.new("#{Rails.root}/app/assets/images/KT6.jpg")
 
 
-Marka.create name: "Iron pharma"
-Marka.create name: "Generics Pharma"
-Marka.create name: "Omega Meds"
-Marka.create name: "Genesis MedsJD Pharma"
-Marka.create name: "JD Pharma"
-Marka.create name: "Leon Labs"
-Marka.create name: "Balkan Pharma"
-Marka.create name: "Muscle Labs"
-Marka.create name: "Kigtropin"
-Marka.create name: "Axio labs"
-Marka.create name: "Oxidine"
-Marka.create name: "King peptides"
-Marka.create name: "Norditropin"
-Marka.create name: "Humantropin"
-Marka.create name: "Gamma"
+# Marka.create name: "Iron pharma"
+# Marka.create name: "Generics Pharma"
+# Marka.create name: "Omega Meds"
+# Marka.create name: "Genesis MedsJD Pharma"
+# Marka.create name: "JD Pharma"
+# Marka.create name: "Leon Labs"
+# Marka.create name: "Balkan Pharma"
+# Marka.create name: "Muscle Labs"
+# Marka.create name: "Kigtropin"
+# Marka.create name: "Axio labs"
+# Marka.create name: "Oxidine"
+# Marka.create name: "King peptides"
+# Marka.create name: "Norditropin"
+# Marka.create name: "Humantropin"
+# Marka.create name: "Gamma"

@@ -6,11 +6,10 @@ ActiveAdmin.register Product do
   		f.input :title, required: true
   		f.input :description, required: true
   		f.file_field :image, required: true
-  		f.input :trademark, required: true
   		f.input :price, required: true
   		f.input :discount
       f.label :category, "category" 
-      f.select :category, options_for_select(["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"])
+      f.select :category, options_for_select(["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler", "Hazır Kürler"])
       f.input :marka
   		#f.input :category, required: true
   	end

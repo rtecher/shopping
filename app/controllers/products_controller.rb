@@ -4,7 +4,9 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @new_products = Product.order(created_at: :desc).take(4)
+    @new_products = Product.order(created_at: :desc).take(8)
+    @fav_products = Product.all.take(8)
+    @hazir_kurler = Product.where(category: "Hazır Kürler").take(8)
   end
 
   # GET /products/1

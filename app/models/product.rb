@@ -6,7 +6,7 @@ class Product < ApplicationRecord
 	belongs_to :marka, optional: true
 
 	def inside_category
-		categories = ["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler"]
+		categories = ["Enjeksiyon Steroidler", "Peptidler", "Tablet Steroidler", "Hazır Kürler"]
 		if !categories.include? category
 			errors.add(:category, "Kategorilerin dışında")
 		end

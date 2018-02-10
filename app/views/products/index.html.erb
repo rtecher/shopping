@@ -14,6 +14,53 @@
     </div>
   </div>      
   <!--//banner-->
+
+<% if @hazir_kurler.count > 0 %>
+  <div class="new">
+  <div class="container">
+    <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
+      <h3 class="title">Hazır <span>Kürler</span></h3>
+      <p><%= link_to 'Tüm Hazır Kürler İçin Tıklayın', detailed_products_index_path("hazir"=>"check") %></p>
+    </div>
+    <div class="new-info">
+      <% @hazir_kurler.each do |product| %>
+      <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
+        <div class="new-top">
+          <%= link_to image_tag(product.image.url, style: 'height:150px;width:300px;', class: "img-responsive"), product %>
+          <div class="new-text">
+            <ul>
+              <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
+              <li><%= link_to 'Hızlı Bakış', product %></li>
+              <li><%= link_to 'Detaylı Arama', detailed_products_index_path %></li>
+            </ul>
+          </div>
+        </div>
+        <div class="new-bottom">
+          <h5><%= link_to product.title, product %></h5>
+          <div class="rating">
+            <span class="on">☆</span>
+            <span class="on">☆</span>
+            <span class="on">☆</span>
+            <span class="on">☆</span>
+            <span>☆</span>
+          </div>
+          <div class="ofr">
+            <% if product.discount %>
+            <p class="pric1"><del><%= product.price %> TL</del></p>
+            <p><span class="item_price"><%= product.discount %> TL</span></p>
+            <% else %>
+            <p><span class="item_price"><%= product.price %> TL</span></p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+      
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<% end %>
   
 <div class="new">
   <div class="container">
@@ -24,7 +71,7 @@
       <% @new_products.each do |product| %>
       <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
         <div class="new-top">
-          <%= link_to image_tag(product.image.url, size: "320x150", class: "img-responsive"), product %>
+          <%= link_to image_tag(product.image.url, style: 'height:150px;width:300px;', class: "img-responsive"), product %>
           <div class="new-text">
             <ul>
               <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
@@ -67,10 +114,10 @@
       <h3 class="title">Popüler<span> Ürünler</span></h3>
     </div>
     <div class="gallery-info">
-      <% Product.all.take(4).each do |product| %>
+      <% @fav_products.each do |product| %>
       <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
         <div class="new-top">
-          <%= link_to image_tag(product.image.url, size: "320x150", class: "img-responsive"), product %>
+          <%= link_to image_tag(product.image.url, style: 'height:150px;width:300px;', class: "img-responsive"), product %>
           <div class="new-text">
             <ul>
               <li><%= link_to 'Sepete Ekle', product_sepets_path(:product_id => product.id), :method=> :post %></li>
