@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @new_products = Product.order(created_at: :desc).take(8)
+    @new_products = Product.where.not(category: "Hazır Kürler").order(created_at: :desc).take(8)
     @fav_products = Product.all.take(8)
     @hazir_kurler = Product.where(category: "Hazır Kürler").take(8)
   end
@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = Comment.where(product_id: @product).where(:confirmed => true)
-    @random = Product.all.sample(3)
+    @random = Product.all.sample(4)
   end
 
   private
