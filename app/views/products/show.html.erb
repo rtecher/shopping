@@ -8,7 +8,7 @@
      <div class="col-md-6 single-top-left simpleCart_shelfItem wow fadeInRight animated" data-wow-delay=".5s">
       <h3><%= @product.title %></h3>
       <% if @product.category != "Hazır Kürler" %>
-        <p>Marka: <%= @product.marka.name %>
+        <p>Marka: <%= @product.marka.name if @product.marka %>
       <% end %>
       <div class="single-rating">
         <span class="starRating">
