@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   resources :sepets, only: [:index]
 
+  match '/google4dee57f5ccc23a18.html',
+  to: proc { |env| [200, {}, ["google-site-verification: google4dee57f5ccc23a18.html"]] }, via: :all
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
