@@ -5,7 +5,7 @@
 			<% @products.all.each do |product| %>
 			<div class="product-grids simpleCart_shelfItem wow fadeInUp animated" data-wow-delay=".5s">
 				<div class="new-top">
-					<%= link_to image_tag(product.image.url, style: 'height:150px;width:300px;', class: "img-responsive"), product %>
+					<%= link_to image_tag(product.image.url, style: 'height:150px;width:300px;', class: "img-responsive", alt: (product.category + " " + product.title)), product %>
 					<div class="new-text">
 						<ul>
 							<li><%= link_to 'Hızlı Bakış', product %></li>

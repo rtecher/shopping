@@ -9,7 +9,7 @@
 			<% end %>
 			<div class="cart-sec simpleCart_shelfItem">
 				<div class="cart-item cyc">
-					<%= link_to product_path(sepet.product) do %><%= image_tag sepet.product.image.url(:small), class: "img-responsive"%><% end %>
+					<%= link_to product_path(sepet.product) do %><%= image_tag sepet.product.image.url(:small), class: "img-responsive", alt: (product.category + " " + product.title) %><% end %>
 				</div>
 				<div class="cart-item-info">
 					<h4><%= link_to product_path(sepet.product) do %><span><%= sepet.product.title %></span> <% end %></h4>
