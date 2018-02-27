@@ -8,4 +8,10 @@ class PagesController < ApplicationController
   def references
   	@references = Reference.all
   end
+
+  def sitemap
+  	respond_to do |format|
+        format.xml
+    end
+  end
 end

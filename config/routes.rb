@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get 'detailed_products/index'
 
+  get "sitemap.xml", :to => "pages#sitemap", :defaults => {:format => :xml}
+
+
   resources :sepets, only: [:index]
 
   match '/google4dee57f5ccc23a18.html',
