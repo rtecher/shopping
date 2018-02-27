@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'detailed_products/index'
 
   get "sitemap.xml", :to => "pages#sitemap", :defaults => {:format => :xml}
+  get '/robots.:format' => 'pages#robots'
 
 
   resources :sepets, only: [:index]
