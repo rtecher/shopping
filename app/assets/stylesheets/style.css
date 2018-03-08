@@ -80,6 +80,7 @@ body a{
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
 	font-family: 'Pompiere', cursive;
+    color: red;
 }
 p{
 	margin:0;
@@ -111,7 +112,7 @@ body a:hover{
 	font-family: 'Raleway', sans-serif;
 }
 .top-header p a,.top-header h2 a{
-    color: #ff5a10;
+    color: #b20000;
     padding: 0 7px;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all;
@@ -196,7 +197,7 @@ body a:hover{
 }
 .logo h1 a {
     display: inline-block;
-    color: #ff590f;
+    color: #b20000;
     text-decoration: none;
 }
 .logo h1 a b {
@@ -236,7 +237,7 @@ span.tag {
 }
 .cart-box p {
     padding: 6px 8px;
-    background-color: #DCDCDC;
+    background-color: #b20000;
     margin-top: 5px;
     font-size: .9em;
 }
@@ -850,13 +851,13 @@ h3.title span {
 }
 .footer-grids p {
     font-size: 1em;
-    color: #32404b;
+    color: #b20000;
     font-weight: 500;
     margin-top: 1em;
     line-height: 1.8em;	
 }
 .footer-grids p a{
-	color: #32404b;
+	color: #b20000;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all;
 	transition:.5s all;
