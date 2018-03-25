@@ -3431,5 +3431,9 @@ ul.qty li {
 .new-text ul li a {
     padding: 0.6em 0em;
 }
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 }
 /*--//responsive-design---*/
